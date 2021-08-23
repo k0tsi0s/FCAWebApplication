@@ -1,0 +1,2 @@
+[Combustion: *x1] [Photosynthesis: *x2] [Fuel: *x3] [CO2: *x4] [Atmosphere: *x5] [Dissolved in Water: *x6] 
+(initiator ?x2 ?x1)(characterised-by ?x1 ?x3)(result ?x1 ?x4)(receipient ?x4 ?x2)(location ?x5 ?x6 ?x4)

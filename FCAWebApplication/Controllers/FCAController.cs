@@ -12,6 +12,7 @@ namespace FCAWebApplication.Controllers
     {
         static string WorkingFileName;
         static string wfServerPath;
+        static Boolean uploadedFile = false;
         // GET: FCA
         public ActionResult Index()
         {
@@ -32,6 +33,14 @@ namespace FCAWebApplication.Controllers
             return null;
             
         }
+        [HttpGet]
+        public Boolean ShowFile()
+        {
+            return uploadedFile;
+
+        }
+
+
 
         [HttpGet]
         public ActionResult UploadFile()
@@ -47,10 +56,20 @@ namespace FCAWebApplication.Controllers
                 if (file == null || file.ContentLength <= 0)
                 {
                     ViewBag.Result = "File upload failed!!";
+                    uploadedFile = false;
                     return View("Index");
                 }
                 else
                 {
+
+                    var fileName = file.FileName.ToLower();
+                    if (!fileName.EndsWith(".csv") && !(fileName.EndsWith(".cgif")) && !(fileName.EndsWith(".cxt")))
+                    {
+
+                        ViewBag.Result = "Invalid file type.";
+                        uploadedFile = false;
+                        return View("Index");
+                    }
                     DirectoryInfo di = new DirectoryInfo(Path.Combine(Server.MapPath("~/Uploads")));
 
                     foreach (FileInfo files in di.GetFiles())
@@ -94,13 +113,15 @@ namespace FCAWebApplication.Controllers
                     strCmdText = "-windowstyle hidden cd " + wfServerPath + "; ../Content/Executables/In-Close4_oneLinerEdition.exe " + wfName + ".cxt; mv concepts.json " + wfName + ".json";
                     var proccess2 = System.Diagnostics.Process.Start("powershell.exe", strCmdText);
                     proccess2.WaitForExit();
-
+                    uploadedFile = true;
+                    ViewBag.Message = true;
                 }
                 return View("Index");
             }
             catch
             {
                 ViewBag.Result = "File upload failed!!";
+                uploadedFile = false;
                 return View("Index");
 
             }

@@ -1,0 +1,13 @@
+Triples to Binaries Report for carboncycle359067.cgif
+
+
+
+Inputs: "Atmosphere" "Dissolved in Water" 
+
+Outputs: "Fuel" 
+
+Cycle: Photosynthesis - initiator - Combustion - result - CO2 - receipient - Photosynthesis
+
+Direct Pathway: Atmosphere - location - CO2 - receipient - Photosynthesis - initiator - Combustion - characterised-by - Fuel
+
+Direct Pathway: Dissolved in Water - location - CO2 - receipient - Photosynthesis - initiator - Combustion - characterised-by - Fuel

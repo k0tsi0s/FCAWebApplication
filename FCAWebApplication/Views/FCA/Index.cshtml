@@ -72,5 +72,21 @@
     <div id="FCATreeTool">
         @Html.Partial("~/Views/_TreeTool.cshtml")
     </div>
+    <script>
+        $(document).ready(function () {
+            var showFile = Get('https://localhost:44325/fca/ShowFile');
+
+            
+
+            if (showFile == 'False') {
+                $('#FCATreeTool').hide();
+            } else {
+                $('#FCATreeTool').show();
+            }
+        });
+       
+    </script>
 </body>
+
+
 </html>
