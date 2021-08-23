@@ -24,8 +24,13 @@ namespace FCAWebApplication.Controllers
         {
             var webClient = new WebClient();
             var path = wfServerPath + WorkingFileName + ".json";
-            var json = webClient.DownloadString(path);
-            return json;
+            if (path != ".json")
+            {
+                var json = webClient.DownloadString(path);
+                return json;
+            }
+            return null;
+            
         }
 
         [HttpGet]

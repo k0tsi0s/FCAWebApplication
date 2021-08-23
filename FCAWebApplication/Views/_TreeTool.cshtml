@@ -4,15 +4,17 @@
 
 <div>
 
+
     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#visualization" id="upload">Visualize</a>
 
     <div class="modal fade" id="visualization">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <span>
-                        <h4 class="modal-title">Visualization</h4><button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </span>
+                    
+                    <h4 class="modal-title">Visualization</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
                     1. Select display type:
                     <select id="treeType">
                         <option value="list">expandable list</option>
@@ -129,7 +131,7 @@
             }
         } else {
             if (upload)
-                alert('Please select a valid json file before continuing')
+                alert('Please select a valid json file before continuing');
         }
     };
 
