@@ -1,35 +1,60 @@
 ﻿<h1>FCA Tree Tool</h1>
 
-        1. Select display type:
-<select id="treeType">
-    <option value="list">expandable list</option>
-    <option value="dendrogram">dendrogram</option>
-    <option value="verticalDendrogram">vertical dendrogram</option>
-</select>
-<span id="viewoptions">
-    &nbsp; &nbsp; &nbsp; &nbsp; Options (change forces refresh):
-    Attributes <input type="checkbox" id="attributes" name="attributes">
-    &nbsp; &nbsp; Objects: <input type="checkbox" id="objects"
-                                  name="objects"> &nbsp; Object Count: <input type="checkbox"
-                                                                              id="objectCount" name="objectCount">
-</span>
-<span class="hint" id="dendHint">
-    Mouse wheel to zoom. Hold
-    click and move mouse to move tree
-</span>
+        
 
 <div>
-    <span>
-        @*2. Select a valid JSON file and upload/draw: <input type="file" id="files" />*@
-        <button id="upload">Upload->Draw Tree</button>
+
+    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#visualization" id="upload">Visualize</a>
+
+    <div class="modal fade" id="visualization">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span>
+                        <h4 class="modal-title">Visualization</h4><button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </span>
+                    1. Select display type:
+                    <select id="treeType">
+                        <option value="list">expandable list</option>
+                        <option value="dendrogram">dendrogram</option>
+                        <option value="verticalDendrogram">vertical dendrogram</option>
+                    </select>
+                    <span id="viewoptions">
+                        &nbsp; &nbsp; &nbsp; &nbsp; Options (change forces refresh):
+                        Attributes <input type="checkbox" id="attributes" name="attributes">
+                        &nbsp; &nbsp; Objects: <input type="checkbox" id="objects"
+                                                      name="objects"> &nbsp; Object Count: <input type="checkbox"
+                                                                                                  id="objectCount" name="objectCount">
+                    </span>
+                    <span class="hint" id="dendHint">
+                        Mouse wheel to zoom. Hold
+                        click and move mouse to move tree
+                    </span>
+                </div>
+
+                <div class="modal-body" id="tree-container">
+
+                </div>
+
+                <div class="modal-footer">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--<span>-->
+    @*2. Select a valid JSON file and upload/draw: <input type="file" id="files" />*@
+    <!--<button id="upload">Upload->Draw Tree</button>
     </span>
     <span class="hint" id="verticalHint">
         Mouse over node to see
         attribute and object information
-    </span>
+    </span>-->
 </div>
-
-<div id="tree-container"></div>
 
 <script>
 
@@ -55,7 +80,7 @@
             } else {
                 $(".hint").show();
             };
-
+            reload(false);
         });
 
         $(':checkbox').change(function () {
@@ -110,3 +135,10 @@
 
     uploadButton.on('click', reload);
 </script>
+
+
+
+
+@*<div id="tree-container"></div>*@
+
+

@@ -1,6 +1,27 @@
-﻿.overlay {
-    background-color: #FFF;
+﻿.modal .modal-dialog {
+    width: 90%;
+    margin: 20px auto;
 }
+
+.modal-content .modal-dialog {
+    width: 90%;
+    height: 90%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 10px;
+}
+
+.modal-content .modal-body {
+    height: calc(100vh - 50px);
+    overflow: auto;
+}
+
+/*.overlay {
+    background-color: #FFF;
+}*/
 
 .node circle {
     fill: #fff;
