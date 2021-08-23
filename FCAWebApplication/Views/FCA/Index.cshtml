@@ -23,7 +23,7 @@
     <script src="~/Scripts/drawDendrogram.js"></script>
     <script src="~/Scripts/drawVerticalDendrogram.js"></script>
 
-    <title>FCA Tree Tool</title>
+    <title>FCA Tree Tool - Web Application</title>
 </head>
 <body>
 
@@ -70,117 +70,7 @@
     </div>
 
     <div id="FCATreeTool">
-        <h1>FCA Tree Tool</h1>
-
-        1. Select display type:
-        <select id="treeType">
-            <option value="list">expandable list</option>
-            <option value="dendrogram">dendrogram</option>
-            <option value="verticalDendrogram">vertical dendrogram</option>
-        </select>
-        <span id="viewoptions">
-            &nbsp; &nbsp; &nbsp; &nbsp; Options (change forces refresh):
-            Attributes <input type="checkbox" id="attributes" name="attributes">
-            &nbsp; &nbsp; Objects: <input type="checkbox" id="objects"
-                                          name="objects"> &nbsp; Object Count: <input type="checkbox"
-                                                                                      id="objectCount" name="objectCount">
-        </span>
-        <span class="hint" id="dendHint">
-            Mouse wheel to zoom. Hold
-            click and move mouse to move tree
-        </span>
-
-        <div>
-            <span>
-                2. Select a valid JSON file and upload/draw: @*<input type="file" id="files" />*@
-                <button id="upload">Upload->Draw Tree</button>
-            </span> <span class="hint" id="verticalHint">
-                Mouse over node to see
-                attribute and object information
-            </span>
-        </div>
-
-        <div id="tree-container"></div>
-
-        <script>
-
-
-            $(document).ready(function () {
-                $("#viewoptions").show();
-                $("#dendHint").hide();
-                $("#verticalHint").hide();
-
-                $('#objects').val(this.checked);
-
-                $("select#treeType").on('change', function () {
-
-                    if ($("#treeType").val() == "verticalDendrogram") {
-                        $("#viewoptions").hide();
-                    } else {
-                        $("#viewoptions").show();
-                    }
-                    ;
-
-                    if ($("#treeType").val() == "list") {
-                        $(".hint").hide();
-                    } else {
-                        $(".hint").show();
-                    };
-
-                });
-
-                $(':checkbox').change(function () {
-                    reload(false);
-                });
-
-            });
-
-            var fileInput = $('#files');
-            var uploadButton = $('#upload');
-
-            function Get(yourUrl) {
-                var Httpreq = new XMLHttpRequest();
-                // a new request
-                Httpreq.open("GET", yourUrl, false);
-                Httpreq.send(null);
-                return Httpreq.responseText;
-            }
-
-            function reload(upload) {
-
-                var input;
-                console.log("in reload upload " + upload);
-                if (!window.FileReader) {
-                    alert('Your browser is not supported')
-                }
-                //input = fileInput.get(0);
-
-                // Create a reader object
-                var reader = new FileReader();
-                var jsonFile = Get('https://localhost:44325/fca/GetFile');
-
-                if (jsonFile != null) {
-                    var myblob = new Blob([jsonFile], {
-                        type: 'application/json'
-                    });
-                    reader.readAsText(myblob);
-
-                    if ($("#treeType").val() == "list") {
-                        $(reader).on('load', drawFileTree);
-                    } else if ($("#treeType").val() == "verticalDendrogram") {
-                        $(reader).on('load', drawVerticalDendrogram);
-
-                    } else {
-                        $(reader).on('load', drawDendrogram);
-                    }
-                } else {
-                    if (upload)
-                        alert('Please select a valid json file before continuing')
-                }
-            };
-
-            uploadButton.on('click', reload);
-        </script>
+        @Html.Partial("~/Views/_TreeTool.cshtml")
     </div>
 </body>
 </html>
