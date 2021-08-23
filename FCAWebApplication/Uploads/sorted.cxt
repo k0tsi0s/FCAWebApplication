@@ -1,0 +1,49 @@
+B
+
+15
+14
+
+Force: #1
+Force: #2
+Force
+Vision
+Mission
+Strategy
+Organization
+Vision: #3
+Vision: #4
+Mission: #5
+Mission: #6
+Strategy: #7
+Strategy: #8
+Organization: #9
+Organization: #10
+Organization: #9 Composed of / Contained within
+Strategy Influences the design and role of
+Strategy: #7 Composed of / Contained within
+Mission Executed by
+Mission: #5 Composed of / Contained within
+Vision Motivated by
+Vision: #3 Composed of / Contained within
+Force Constrains
+Force: #1 Composed of / Contained within
+Mission Guides
+Vision Guides
+Force Influences
+Force Influences
+Force Influences
+..............
+........X.....
+..............
+.............X
+............X.
+.........XXXXX
+.X.X.X.X.XXXXX
+..............
+......X.......
+..............
+....X.........
+..............
+..X...........
+..............
+X.............

@@ -1,0 +1,67 @@
+{
+	"Node" : 0,
+	"attributes" : [],
+	"objects" : ["Force: #1","Mission: #5","Force","Vision: #3","Strategy: #7","Organization: #9","Organization: #10","Strategy: #8","Mission: #6","Vision: #4","Force: #2","Mission","Organization","Strategy","Vision"],
+	"own_objects" : ["Force: #1","Mission: #5","Force","Vision: #3","Strategy: #7","Organization: #9"],
+	"ObjectCount" : "15 | 100%",
+
+	"children": [{
+		"Node" : 7,
+		"attributes" : ["Organization: #9 Composed of / Contained within"],
+		"objects" : ["Organization: #10"],
+		"own_objects" : ["Organization: #10"],
+		"ObjectCount" : "1 | 6%"
+	},{
+		"Node" : 6,
+		"attributes" : ["Strategy: #7 Composed of / Contained within"],
+		"objects" : ["Strategy: #8"],
+		"own_objects" : ["Strategy: #8"],
+		"ObjectCount" : "1 | 6%"
+	},{
+		"Node" : 5,
+		"attributes" : ["Mission: #5 Composed of / Contained within"],
+		"objects" : ["Mission: #6"],
+		"own_objects" : ["Mission: #6"],
+		"ObjectCount" : "1 | 6%"
+	},{
+		"Node" : 4,
+		"attributes" : ["Vision: #3 Composed of / Contained within"],
+		"objects" : ["Vision: #4"],
+		"own_objects" : ["Vision: #4"],
+		"ObjectCount" : "1 | 6%"
+	},{
+		"Node" : 3,
+		"attributes" : ["Force: #1 Composed of / Contained within"],
+		"objects" : ["Force: #2"],
+		"own_objects" : ["Force: #2"],
+		"ObjectCount" : "1 | 6%"
+	},{
+		"Node" : 2,
+		"attributes" : ["Force Influences"],
+		"objects" : ["Mission","Strategy","Organization"],
+		"own_objects" : ["Mission","Strategy","Organization"],
+		"ObjectCount" : "3 | 20%"
+	},{
+		"Node" : 1,
+		"attributes" : ["Force Influences"],
+		"objects" : ["Vision","Organization","Strategy"],
+		"own_objects" : ["Vision"],
+		"ObjectCount" : "3 | 20%",
+
+		"children": [{
+			"Node" : 8,
+			"attributes" : ["Force Influences","Force Influences","Vision Guides","Mission Guides"],
+			"objects" : ["Strategy","Organization"],
+			"own_objects" : ["Strategy"],
+			"ObjectCount" : "2 | 13%",
+
+			"children": [{
+				"Node" : 9,
+				"attributes" : ["Force Constrains","Vision Motivated by","Mission Executed by","Strategy Influences the design and role of"],
+				"objects" : ["Organization"],
+				"own_objects" : ["Organization"],
+				"ObjectCount" : "1 | 6%"
+			}]
+		}]
+	}]
+}
