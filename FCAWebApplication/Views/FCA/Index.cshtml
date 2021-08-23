@@ -2,115 +2,74 @@
     ViewBag.Title = "Index";
 }
 
-@using (Html.BeginForm("UploadFile", "FCA", FormMethod.Post, new { enctype = "multipart/form-data" }))
-{
-    <div>
-        <br />
-        <p>Select a .CSV, .CGIF or a .CXT File:.</p>
-        @Html.TextBox("file", "", new { type = "file" }) <br />
-        <input type="submit" value="Upload" accept=".csv,.cgif,.cxt" id="uploadFile" />
-        @ViewBag.Message
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <link href="~/Content/TreeTool.css" rel="stylesheet" />
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="~/Scripts/treelist.js"></script>
+    <script src="~/Scripts/drawFileTree.js"></script>
+    <script src="~/Scripts/drawDendrogram.js"></script>
+    <script src="~/Scripts/drawVerticalDendrogram.js"></script>
+
+    <title>FCA Tree Tool</title>
+</head>
+<body>
+
+    <div id="uploadFile">
+
+        @using (Html.BeginForm("UploadFile", "FCA", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div>
+                <br />
+                <p>Select a .CSV, .CGIF or a .CXT File:.</p>
+                @Html.TextBox("file", "", new { type = "file" }) <br />
+                <input type="submit" value="Upload" accept=".csv,.cgif,.cxt" id="uploadFile" />
+                @ViewBag.Message
+            </div>
+        }
+        @ViewBag.Result
+
     </div>
-}
-@ViewBag.Result
 
+    <div id="exportFile">
 
-@using (Html.BeginForm("ExportFile", "FCA", FormMethod.Post, new { enctype = "multipart/form-data" }))
-{
-    <div>
-        <hr />
+        @using (Html.BeginForm("ExportFile", "FCA", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div>
+                <hr />
 
-        <p>Select File to export:.</p>
+                <p>Select File to export:.</p>
 
-        <form action="/action_page.php">
-            <label for="cars">Choose a filetype:</label>
-            <select name="file" id="file">
-                <option value=".csv">.csv</option>
-                <option value=".cgif">.cgif</option>
-                <option value=".cxt">.cxt</option>
-                <option value=".json">.json</option>
-            </select>
-            <br><br>
-            <input type="submit" value="Export">
-        </form>
+                <form action="/action_page.php">
+                    <label for="cars">Choose a filetype:</label>
+                    <select name="file" id="file">
+                        <option value=".csv">.csv</option>
+                        <option value=".cgif">.cgif</option>
+                        <option value=".cxt">.cxt</option>
+                        <option value=".json">.json</option>
+                    </select>
+                    <br><br>
+                    <input type="submit" value="Export">
+                </form>
+
+            </div>
+        }
 
     </div>
-}
 
-<div id="FCATreeTool">
-
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="utf-8">
-        <style type="text/css">
-            .overlay {
-                background-color: #FFF;
-            }
-
-            .node circle {
-                fill: #fff;
-                stroke: steelblue;
-                stroke-width: 1.5px;
-            }
-
-            .node text {
-                font-size: 10px;
-                font-family: sans-serif;
-            }
-
-            .link {
-                fill: none;
-                stroke: #ccc;
-                stroke-width: 1.5px;
-            }
-
-            .selected {
-                color: orange;
-            }
-
-            .hint {
-                float: right;
-                color: blue;
-                margin-right: 80px;
-                font-style: oblique;
-            }
-
-            .node {
-                cursor: pointer;
-                position: absolute;
-                list-style: none;
-                font-size: 14px;
-            }
-
-                .node span {
-                    margin-right: 3px;
-                }
-
-            span {
-                white-space: nowrap;
-            }
-        </style>
-
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"
-              rel="stylesheet">
-
-        <link rel="shortcut icon" href="favicon.ico">
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="https://d3js.org/d3.v3.min.js"></script>
-        <script src="~/Scripts/treelist.js"></script>
-        <script src="~/Scripts/drawFileTree.js"></script>
-        <script src="~/Scripts/drawDendrogram.js"></script>
-        <script src="~/Scripts/drawVerticalDendrogram.js"></script>
-
-        <title>FCA Tree Tool</title>
-    </head>
-
-    <body>
+    <div id="FCATreeTool">
         <h1>FCA Tree Tool</h1>
 
         1. Select display type:
@@ -133,7 +92,7 @@
 
         <div>
             <span>
-                2. Select a valid JSON file and upload/draw: <input type="file" id="files" />
+                2. Select a valid JSON file and upload/draw: @*<input type="file" id="files" />*@
                 <button id="upload">Upload->Draw Tree</button>
             </span> <span class="hint" id="verticalHint">
                 Mouse over node to see
@@ -166,14 +125,7 @@
                         $(".hint").hide();
                     } else {
                         $(".hint").show();
-                    }
-                    ;
-
-                    //	if ($("#treeType").val() == "verticalDendrogram") {
-                    //		$("#verticalHint").show();
-                    //	} else {
-                    //		$("#verticalHint").hide();
-                    //	};
+                    };
 
                 });
 
@@ -188,7 +140,7 @@
 
             function Get(yourUrl) {
                 var Httpreq = new XMLHttpRequest();
-                // a new request 
+                // a new request
                 Httpreq.open("GET", yourUrl, false);
                 Httpreq.send(null);
                 return Httpreq.responseText;
@@ -229,7 +181,6 @@
 
             uploadButton.on('click', reload);
         </script>
-    </body>
+    </div>
+</body>
 </html>
-
-</div>

@@ -134,6 +134,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Executables\CG-FCA-v7.exe" />
     <Content Include="Content\Executables\In-Close4_oneLinerEdition.exe" />
+    <Content Include="Content\TreeTool.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

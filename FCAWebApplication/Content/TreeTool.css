@@ -1,0 +1,46 @@
+﻿.overlay {
+    background-color: #FFF;
+}
+
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+.node text {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+}
+
+.selected {
+    color: orange;
+}
+
+.hint {
+    float: right;
+    color: blue;
+    margin-right: 80px;
+    font-style: oblique;
+}
+
+.node {
+    cursor: pointer;
+    position: absolute;
+    list-style: none;
+    font-size: 14px;
+}
+
+    .node span {
+        margin-right: 3px;
+    }
+
+span {
+    white-space: nowrap;
+}
