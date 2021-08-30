@@ -1,23 +1,25 @@
 B
 
 6
-6
+8
 
-Combustion
-Photosynthesis
-Fuel
-CO2
-Atmosphere
-Dissolved in Water
-Combustion characterised-by
-Combustion result
-Dissolved in Water location
-Atmosphere location
-CO2 receipient
-Photosynthesis initiator
-.XXXXX
-.XXXXX
-X.XXXX
-.XXXXX
-......
-......
+C
+E
+D
+Z
+B
+A
+B from-cycle1
+E from-cycle2
+E to-cycle2
+B in-cycle1
+D in-cycle2
+A to-cycle2
+C to-cycle1
+A to-cycle1
+...X..XX
+..X.XX..
+..X.XX..
+XX..XXXX
+...X..XX
+........

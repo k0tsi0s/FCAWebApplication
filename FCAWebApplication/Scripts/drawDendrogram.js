@@ -10,7 +10,7 @@ function drawDendrogram(e) {
 	var fillColour = "mediumslateblue";
 	// Calculate total nodes, max label length
 	var totalNodes = 0;
-	var maxLabelLength = 20;
+	var maxLabelLength = 30;
 
 	var panSpeed = 200;
 	var panBoundary = 20; // Within 20px from edges will pan when dragging.
@@ -22,7 +22,8 @@ function drawDendrogram(e) {
 	// "oneLevel";
 
 	// size of the diagram
-	var viewerWidth = 10000;// $(document).width();
+	//var viewerWidth = 10000;
+	var viewerWidth = $(document).width();
 	var viewerHeight = $(document).height();
 
 	var tree = d3.layout.tree().size([ viewerHeight, viewerWidth ]);
@@ -365,7 +366,8 @@ function drawDendrogram(e) {
 
 	// Define the root
 	root = treeData;
-	root.x0 = (viewerHeight) / 4;
+	//root.x0 = (viewerHeight) / 4;
+	root.x0 = 40;
 	root.y0 = 40;
 
 	scale = zoomListener.scale();

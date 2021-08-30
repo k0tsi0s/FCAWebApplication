@@ -53,7 +53,7 @@
 
 .node {
     cursor: pointer;
-    position: absolute;
+    /*position: absolute;*/
     list-style: none;
     font-size: 14px;
 }

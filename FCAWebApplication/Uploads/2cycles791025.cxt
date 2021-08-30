@@ -1,0 +1,25 @@
+B
+
+6
+8
+
+C
+E
+D
+Z
+B
+A
+A to-cycle1
+C to-cycle1
+B in-cycle1
+E to-cycle2
+A to-cycle2
+D in-cycle2
+E from-cycle2
+B from-cycle1
+XXX.....
+...XXX..
+...XXX..
+XX..XXXX
+XXX.....
+........
