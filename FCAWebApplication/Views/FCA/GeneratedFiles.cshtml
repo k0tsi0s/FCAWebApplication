@@ -1,0 +1,26 @@
+﻿@using FCAWebApplication.Models
+@model List<FileModel>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Generated Files</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>File Name</th>
+            <th></th>
+        </tr>
+        @foreach (FileModel file in Model)
+        {
+            <tr>
+                <td>@file.FileName</td>
+                <td>@Html.ActionLink("Download", "DownloadFile", new { fileName = file.FileName })</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

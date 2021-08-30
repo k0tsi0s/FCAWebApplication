@@ -7,11 +7,11 @@ Person: Simon
 Hotel: OpenSky
 Coach: #564
 City: London
-Coach: #564 destination
 Hotel: OpenSky location
-Person: Simon travels-by
+Coach: #564 destination
 Person: Simon books
+Person: Simon travels-by
 ....
-...X
 ..X.
+...X
 XXXX

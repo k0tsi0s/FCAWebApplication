@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FCAWebApplication.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -145,5 +146,31 @@ namespace FCAWebApplication.Controllers
             }
         }
 
+        public ActionResult GeneratedFiles()
+        {
+            //Fetch all files in the Folder (Directory).
+            string[] filePaths = Directory.GetFiles(Server.MapPath("~/Uploads/"));
+
+            //Copy File names to Model collection.
+            List<FileModel> files = new List<FileModel>();
+            foreach (string filePath in filePaths)
+            {
+                files.Add(new FileModel { FileName = Path.GetFileName(filePath) });
+            }
+
+            return View(files);
+        }
+
+        public FileResult DownloadFile(string fileName)
+        {
+            //Build the File Path.
+            string path = Server.MapPath("~/Uploads/") + fileName;
+
+            //Read the File data into Byte Array.
+            byte[] bytes = System.IO.File.ReadAllBytes(path);
+
+            //Send the File to Download.
+            return File(bytes, "application/octet-stream", fileName);
+        }
     }
 }
