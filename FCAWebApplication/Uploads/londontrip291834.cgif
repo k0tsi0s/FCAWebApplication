@@ -1,2 +1,0 @@
-[Person: Simon] [Hotel: OpenSky] [Coach: #564] [City: London] 
-(location OpenSky London)(destination #564 London)(books Simon OpenSky)(travels-by Simon #564)

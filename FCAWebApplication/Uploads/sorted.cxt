@@ -1,17 +1,13 @@
 B
 
-4
-4
+3
+2
 
-Person: Simon
-Hotel: OpenSky
-Coach: #564
-City: London
-Coach: #564 destination
-Hotel: OpenSky location
-Person: Simon travels-by
-Person: Simon books
-....
-...X
-..X.
-XXXX
+Cat
+Mat
+Colour: Grey
+Mat has-attribute
+Cat sits-on
+..
+.X
+XX

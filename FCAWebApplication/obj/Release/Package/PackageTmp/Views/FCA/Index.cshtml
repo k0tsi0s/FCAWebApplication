@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <link href="~/Content/TreeTool.css" rel="stylesheet" />
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="~/Scripts/treelist.js"></script>
+    <script src="~/Scripts/drawFileTree.js"></script>
+    <script src="~/Scripts/drawDendrogram.js"></script>
+    <script src="~/Scripts/drawVerticalDendrogram.js"></script>
+
+    <title>FCA Tree Tool - Web Application</title>
+</head>
+<body>
+
+    <div>
+        <div id="uploadFile">
+
+            @using (Html.BeginForm("UploadFile", "FCA", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <div>
+                    <br />
+                    <p>Select a .CSV, .CGIF or a .CXT File:.</p>
+                    @Html.TextBox("file", "", new { type = "file" }) <br />
+                    <input type="submit" value="Upload" accept=".csv,.cgif,.cxt" id="uploadFile" />
+                    @ViewBag.Message
+                </div>
+            }
+            @ViewBag.Result
+
+        </div>
+
+        <div id="exportFile">
+
+            @using (Html.BeginForm("ExportFile", "FCA", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <div>
+                    <hr />
+
+                    <p>Select File to export:.</p>
+
+                    <form action="/action_page.php">
+                        <label for="cars">Choose a filetype:</label>
+                        <select name="file" id="file">
+                            <option value=".csv">Comma Separated Values (.csv)</option>
+                            <option value=".cgif">Conceptual Graph File (.cgif)</option>
+                            <option value=".cxt">Formal Context (.cxt)</option>
+                            <option value=".txt">Report - Text File (.txt)</option>
+                            <option value=".json">JavaScript Object Notation (.json)</option>
+                        </select>
+                        <br><br>
+                        <input type="submit" value="Export">
+                        <a href="GeneratedFiles" class="btn" id="generatedFiles">View all generated files</a>
+                    </form>
+
+                </div>
+            }
+
+        </div>
+
+        <br />
+        <div id="FCATreeTool">
+            @Html.Partial("~/Views/_TreeTool.cshtml")
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            var showFile = Get('https://localhost:44325/fca/ShowFile');
+
+            if (showFile == 'False') {
+                $('#FCATreeTool').hide();
+                $('#exportFile').hide();
+            } else {
+                $('#FCATreeTool').show();
+                $('#exportFile').show();
+            }
+        });
+
+    </script>
+
+</body>
+</html>

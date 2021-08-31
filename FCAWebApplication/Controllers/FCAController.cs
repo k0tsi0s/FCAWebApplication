@@ -20,7 +20,6 @@ namespace FCAWebApplication.Controllers
             return View();
         }
 
-
         [HttpGet]
         public String GetFile()
         {
@@ -34,6 +33,7 @@ namespace FCAWebApplication.Controllers
             return null;
             
         }
+        
         [HttpGet]
         public Boolean ShowFile()
         {
@@ -41,14 +41,13 @@ namespace FCAWebApplication.Controllers
 
         }
 
-
-
         [HttpGet]
         public ActionResult UploadFile()
         {
             //return View();
             return View("Index");
         }
+        
         [HttpPost]
         public ActionResult UploadFile(HttpPostedFileBase file)
         {
@@ -171,6 +170,14 @@ namespace FCAWebApplication.Controllers
 
             //Send the File to Download.
             return File(bytes, "application/octet-stream", fileName);
+        }
+
+        public ActionResult PreviewFile(string fileName)
+        {
+            string filePath = Server.MapPath("~/Uploads/") + fileName;
+            string[] texts = System.IO.File.ReadAllLines(filePath);
+            ViewBag.Data = texts;
+            return View();
         }
     }
 }

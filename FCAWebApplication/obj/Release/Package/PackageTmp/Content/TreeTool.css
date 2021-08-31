@@ -1,0 +1,67 @@
+﻿.modal .modal-dialog {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.modal-content .modal-dialog {
+    width: 90%;
+    height: 90%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 10px;
+}
+
+.modal-content .modal-body {
+    height: calc(100vh - 50px);
+    overflow: auto;
+}
+
+/*.overlay {
+    background-color: #FFF;
+}*/
+
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+.node text {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+}
+
+.selected {
+    color: orange;
+}
+
+.hint {
+    float: right;
+    color: blue;
+    margin-right: 80px;
+    font-style: oblique;
+}
+
+.node {
+    cursor: pointer;
+    /*position: absolute;*/
+    list-style: none;
+    font-size: 14px;
+}
+
+    .node span {
+        margin-right: 3px;
+    }
+
+span {
+    white-space: nowrap;
+}

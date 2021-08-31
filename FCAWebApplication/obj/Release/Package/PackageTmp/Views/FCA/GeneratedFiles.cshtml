@@ -1,0 +1,54 @@
+﻿@using FCAWebApplication.Models
+@model List<FileModel>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+    <title>Generated Files</title>
+</head>
+
+<body>
+    <br />
+    <br />
+    <p>
+        @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" })
+    </p>
+    <table id="generatedFiles" class="table table-bordered table-hover" style="width:100%">
+        <thead>
+            <tr>
+                <th>File Name</th>
+                <th>Options</th>
+                <th> </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (FileModel file in Model)
+            {
+                <tr>
+                    <td>@file.FileName</td>
+                    <td>@Html.ActionLink("Preview", "PreviewFile", new { fileName = file.FileName })</td>
+                    <td>@Html.ActionLink("Download", "DownloadFile", new { fileName = file.FileName })</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+
+</body>
+</html>
+
+@section scripts
+    {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#generatedFiles').DataTable();
+        });
+    </script>
+
+    <script src='https://code.jquery.com/jquery-3.5.1.js'></script>
+    <script src='https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js'></script>
+
+}
