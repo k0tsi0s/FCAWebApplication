@@ -1,0 +1,29 @@
+{
+	"Node" : 0,
+	"attributes" : [],
+	"objects" : ["Person: Simon","Coach: #564","City: London","Hotel: OpenSky"],
+	"own_objects" : ["Person: Simon"],
+	"ObjectCount" : "4 | 100%",
+
+	"children": [{
+		"Node" : 2,
+		"attributes" : ["Person: Simon travels-by"],
+		"objects" : ["Coach: #564","City: London"],
+		"own_objects" : ["Coach: #564","City: London"],
+		"ObjectCount" : "2 | 50%"
+	},{
+		"Node" : 1,
+		"attributes" : ["Person: Simon books"],
+		"objects" : ["Hotel: OpenSky","City: London"],
+		"own_objects" : ["Hotel: OpenSky"],
+		"ObjectCount" : "2 | 50%",
+
+		"children": [{
+			"Node" : 3,
+			"attributes" : ["Person: Simon travels-by","Hotel: OpenSky location","Coach: #564 destination"],
+			"objects" : ["City: London"],
+			"own_objects" : ["City: London"],
+			"ObjectCount" : "1 | 25%"
+		}]
+	}]
+}

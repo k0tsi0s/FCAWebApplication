@@ -33,7 +33,7 @@ namespace FCAWebApplication.Controllers
             return null;
             
         }
-        
+
         [HttpGet]
         public Boolean ShowFile()
         {
@@ -172,12 +172,19 @@ namespace FCAWebApplication.Controllers
             return File(bytes, "application/octet-stream", fileName);
         }
 
-        public ActionResult PreviewFile(string fileName)
+        [HttpGet]
+        public ActionResult PreviewFile(string id)
         {
-            string filePath = Server.MapPath("~/Uploads/") + fileName;
-            string[] texts = System.IO.File.ReadAllLines(filePath);
+            string withQuotes = "\"" + id + "\"";
+            string filePath = Server.MapPath("~/Uploads/") + id;
+            string texts = System.IO.File.ReadAllText(filePath);
             ViewBag.Data = texts;
-            return View();
+            //ViewBag.Data = MvcHtmlString.Create(texts);
+            //return View();
+            return PartialView("_previewFile");
         }
+
+
+
     }
 }

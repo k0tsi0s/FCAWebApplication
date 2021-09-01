@@ -142,7 +142,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\d3v4.js" />
     <Content Include="Scripts\drawDendrogram.js" />
@@ -176,10 +175,11 @@
     <Content Include="Views\FCA\Index.cshtml" />
     <Content Include="Views\_TreeTool.cshtml" />
     <Content Include="Views\FCA\GeneratedFiles.cshtml" />
-    <Content Include="Views\FCA\PreviewFile.cshtml" />
+    <Content Include="Views\FCA\_previewFile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="Uploads\" />
   </ItemGroup>
   <ItemGroup>

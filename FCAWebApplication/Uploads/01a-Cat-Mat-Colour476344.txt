@@ -1,9 +1,0 @@
-Triples to Binaries Report for 01a-Cat-Mat-Colour476344.cgif
-
-
-
-Inputs: "Cat" 
-
-Outputs: "Colour: Grey" 
-
-Direct Pathway: Cat - sits-on - Mat - has-attribute - Colour: Grey

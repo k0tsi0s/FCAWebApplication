@@ -28,7 +28,12 @@
             {
                 <tr>
                     <td>@file.FileName</td>
-                    <td>@Html.ActionLink("Preview", "PreviewFile", new { fileName = file.FileName })</td>
+
+                    <td><button id="preview">Preview</button></td>
+
+                    @*<td>
+                        <input value="Preview" type="button" onclick="previewFun('@file.FileName')" />
+                    </td>*@
                     <td>@Html.ActionLink("Download", "DownloadFile", new { fileName = file.FileName })</td>
                 </tr>
             }
@@ -36,7 +41,12 @@
 
     </table>
 
-
+    <div class="modal fade" id="previewFile">
+        <div class="modal-dialog" role="document">
+            
+        </div>
+    </div>
+    
 </body>
 </html>
 
@@ -46,9 +56,21 @@
         $(document).ready(function () {
             $('#generatedFiles').DataTable();
         });
+
+        $('#generatedFiles').on('click', '#preview', function () {
+            var fileName = $(this).closest("tr").find("td").eq(0).html();
+            $.ajax({
+                url: "@Url.Action("PreviewFile", "FCA")",
+                data: { id: fileName },
+                success: function (data) {
+                    $("#previewFile .modal-dialog").html(data);
+                    $("#previewFile").modal("show");
+                }
+            });
+        });
+
     </script>
 
-    <script src='https://code.jquery.com/jquery-3.5.1.js'></script>
     <script src='https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js'></script>
 
 }

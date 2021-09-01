@@ -1,5 +1,5 @@
 ﻿
-<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#previewFile" id="previewFileBtn">Preview</button>
+<button type="button" class="btn btn-default btn-lg"  data-toggle="modal" data-target="#previewFile" id="previewFileBtn">Preview</button>
 
 <div class="modal fade" id="previewFile">
     <div class="modal-dialog">
@@ -29,7 +29,8 @@
 </div>
 <script>
         $(document).ready(function () {
-            $("#previewFileBtn").click(function () {
+            $("#previewFileBtn").click(function (fileName) {
+                window.location.href = '@Url.Action("PreviewFile", "FCAController")?fileName=' + fileName;
                 $("#previewFile").modal();
             });
         });
