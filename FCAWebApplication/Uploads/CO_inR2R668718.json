@@ -1,0 +1,1025 @@
+{
+	"Node" : 0,
+	"attributes" : [],
+	"objects" : ["FI","Profitability Segment","Activity Allocation Price","Organization","Orders with Revenue","Category Value","Overhead Cost Controlling (CO-OM)","Universal Journal (ACDOCA)","Statistical Key Figures","Internal Order Settlement","SAP S/4HANA","Statistical Cost","Activity Type","Organizational Units"," a settlement will occur at the end of each ,Period"," but not for allocations and do not count in any reconciliation between CO and other modules, in the ,Client"," including planning and posting actual costs) of an ,Internal Order"," they are also used to monitor revenues that unaffect the organization's core business, such as ,Miscellaneous Revenue","Costs","Activity Allocation"," you then to this combination assign a planned ,Activity Allocation Price","Distribution Channel","Plant","Customer","Period"," thus calcs avg. of single values for the ,Period","Cost Center Report"," for ,Standard Hierarchy (SH)","Material Ledger (ML)","Asset Accounting (AA)","Price","Process","External Cost"," you need to determine the ,Category Value","Employee","Additional Key Figures","Statistical Key Figure"," or leave unrestricted by entering an asterisk (*)  ,Activity Type Master Data","Activity Type Master Data","Secondary Cost","Cost Allocation","Settlement Rule","Sales Order","Asset","Profitabilility Segment"," such as the settings for settlement, planning, and budgeting, depending on what the order is used for, using the ,Order Type Field","Master Data Fields","Order Type Field","Internal Order Master Data","Receiver","General Ledger (G/L)"," the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," the costs have to be passed on to their final destination, i.e. ,Internal Order Settlement"," the costs have to be passed on to their final destination, such as ,Profitability Segment"," the costs have to be passed on to their final destination, such as ,Fixed Asset"," the costs have to be passed on to their final destination, such as ,Cost Center"," monitoring, and reporting processes, before ,Internal Order Settlement"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," which would consume time and would result in an additional ,FI Document"," which would consume time and would result in an addition ,FI Document","Statistical Internal Order"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Settled"," collecting, monitoring, and settling costs of certain operations and tasks in an ,Organization"," & called ,Orders with Revenue"," & called ,Accrual Orders"," such as building a storage facility, & called ,Investment Orders"," such as conducting a trade fair or tracking costs for maintenance and repair work, & called ,Overhead Orders"," monitoring, and allocating ,Costs","Internal Orders"," allocates costs to th ,Receiver","Work Breakdown Structure (WBS)","CO Object","Fixed Asset"," entered manually, or can be derived automatically from other characteristics, e.g. ,Plant"," entered manually, or can be derived automatically from other characteristics, e.g. ,Material"," the construction of a crane (motor design, building the chassis, etc.), normally affects ≥ o ,Profit Center"," as master data is ,Time Dependent"," the revenue postings are transferred to ,Profit Center Accounting (PCA)","Production Order","Business Process"," as ,Revenue"," as ,Cost","Profit and Loss","Balance Sheet"," or ,Organization","Profit Center Accounting (PCA)"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," you must specify that code user links to eac ,Cost Center","Profit Center"," mostly represented by a ,Profit Center","Standard Hierarchy (SH)"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Operating Concern","Company Code","Currency","Master Data Record","Country Chart of Accounts","Fiscal Year","Chart of Accounts","Internal Activity","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Order","Project","Routing","Bill of Material (BOM)","Product","Overhead","Segment","Cost Object","Internal Order","Cost Settlement","ABC Process","Cost Center","Revenue","Profitability Analysis (CO-PA)","CO"],
+	"own_objects" : ["FI","Profitability Segment","Activity Allocation Price","Organization","Orders with Revenue","Category Value","Overhead Cost Controlling (CO-OM)","Universal Journal (ACDOCA)","Statistical Key Figures","Internal Order Settlement","SAP S/4HANA","Statistical Cost","Activity Type","Organizational Units"],
+	"ObjectCount" : "134 | 100%",
+
+	"children": [{
+		"Node" : 24,
+		"attributes" : ["Internal Order Settlement  depending on the type of internal order and its business purpose"],
+		"objects" : [" a settlement will occur at the end of each ,Period"],
+		"own_objects" : [" a settlement will occur at the end of each ,Period"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 23,
+		"attributes" : ["Statistical Cost  can be used only for analysis purposes"],
+		"objects" : [" but not for allocations and do not count in any reconciliation between CO and other modules, in the ,Client"],
+		"own_objects" : [" but not for allocations and do not count in any reconciliation between CO and other modules, in the ,Client"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 22,
+		"attributes" : ["SAP S/4HANA  system you can control your internal orders throughout the life cycle (from creation to final settlement"],
+		"objects" : [" including planning and posting actual costs) of an ,Internal Order"],
+		"own_objects" : [" including planning and posting actual costs) of an ,Internal Order"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 21,
+		"attributes" : ["Orders with Revenue  if billing is not automated"],
+		"objects" : [" they are also used to monitor revenues that unaffect the organization's core business, such as ,Miscellaneous Revenue"],
+		"own_objects" : [" they are also used to monitor revenues that unaffect the organization's core business, such as ,Miscellaneous Revenue"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 20,
+		"attributes" : ["Orders with Revenue category is used to track"],
+		"objects" : ["Costs"],
+		"own_objects" : ["Costs"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 19,
+		"attributes" : ["Activity Allocation Price used by system to valuate the quantity entered in the direct","Activity Allocation Price that you can enter the planned price manually or you have the system calculate it for the"],
+		"objects" : ["Activity Allocation"],
+		"own_objects" : ["Activity Allocation"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 18,
+		"attributes" : ["Activity Type  is combined with the cost center"],
+		"objects" : [" you then to this combination assign a planned ,Activity Allocation Price"],
+		"own_objects" : [" you then to this combination assign a planned ,Activity Allocation Price"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 17,
+		"attributes" : ["Profitability Segment does not have a master record as it combines characteristics such as"],
+		"objects" : ["Distribution Channel"],
+		"own_objects" : ["Distribution Channel"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 16,
+		"attributes" : ["Profitability Segment does not have a master record as it combines characteristics such as"],
+		"objects" : ["Plant"],
+		"own_objects" : ["Plant"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 15,
+		"attributes" : ["Profitability Segment does not have a master record as it combines characteristics such as"],
+		"objects" : ["Customer"],
+		"own_objects" : ["Customer"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 14,
+		"attributes" : ["Category Value Total: can be added to a total from the periodic values for the","Internal Order Settlement is another form of periodic cost allocation in a"],
+		"objects" : ["Period"],
+		"own_objects" : ["Period"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 13,
+		"attributes" : ["Category Value  Fixed: periodic values can't be added to a total"],
+		"objects" : [" thus calcs avg. of single values for the ,Period"],
+		"own_objects" : [" thus calcs avg. of single values for the ,Period"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 12,
+		"attributes" : ["Statistical Key Figures are used as additional reporting info in ≥ o"],
+		"objects" : ["Cost Center Report"],
+		"own_objects" : ["Cost Center Report"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 11,
+		"attributes" : ["Organizational Units  has standard hierarchy node to which the CC is assigned","Organizational Units  contains the SH node field to which the CC is assigned"],
+		"objects" : [" for ,Standard Hierarchy (SH)"],
+		"own_objects" : [" for ,Standard Hierarchy (SH)"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 10,
+		"attributes" : ["Universal Journal (ACDOCA) consists of"],
+		"objects" : ["Material Ledger (ML)"],
+		"own_objects" : ["Material Ledger (ML)"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 9,
+		"attributes" : ["Universal Journal (ACDOCA) consists of"],
+		"objects" : ["Asset Accounting (AA)"],
+		"own_objects" : ["Asset Accounting (AA)"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 8,
+		"attributes" : ["Activity Type valuate activities from a business/mgt. calculation of"],
+		"objects" : ["Price"],
+		"own_objects" : ["Price"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 7,
+		"attributes" : ["Activity Type supply outputs by one (sending) cost center to ≥ one oth"],
+		"objects" : ["Process"],
+		"own_objects" : ["Process"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 6,
+		"attributes" : ["Overhead Cost Controlling (CO-OM) posts ≥ one process from other S/4HANA applications "],
+		"objects" : ["External Cost"],
+		"own_objects" : ["External Cost"],
+		"ObjectCount" : "1 | 0%"
+	},{
+		"Node" : 5,
+		"attributes" : ["Statistical Key Figures calculates"],
+		"objects" : ["Cost Center","Internal Order","Segment","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","Additional Key Figures"," the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," you need to determine the ,Category Value","Employee"],
+		"own_objects" : ["Cost Center","Internal Order","Segment","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","Additional Key Figures"," the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"],
+		"ObjectCount" : "45 | 33%",
+
+		"children": [{
+			"Node" : 26,
+			"attributes" : ["Additional Key Figures  needs to calculate the total"],
+			"objects" : [" you need to determine the ,Category Value"],
+			"own_objects" : [" you need to determine the ,Category Value"],
+			"ObjectCount" : "1 | 0%"
+		},{
+			"Node" : 25,
+			"attributes" : ["Additional Key Figures such as average salaries per"],
+			"objects" : ["Employee"],
+			"own_objects" : ["Employee"],
+			"ObjectCount" : "1 | 0%"
+		}]
+	},{
+		"Node" : 4,
+		"attributes" : ["Statistical Key Figures consist of ≥ o"],
+		"objects" : ["Cost Center","Internal Order","Segment","Project","Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity","General Ledger (G/L)","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","Statistical Key Figure"," the construction of a crane (motor design, building the chassis, etc.), normally affects ≥ o ,Profit Center","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Receiver","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement","Profitabilility Segment","Asset","Sales Order"," using ,Internal Order Settlement"," the balance of the internal order should be zero, using ,Internal Order Settlement"],
+		"own_objects" : ["Cost Center","Internal Order","Segment","Project","Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity","General Ledger (G/L)","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","Statistical Key Figure"," the construction of a crane (motor design, building the chassis, etc.), normally affects ≥ o ,Profit Center","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Receiver","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement","Profitabilility Segment","Asset","Sales Order"," using ,Internal Order Settlement"," the balance of the internal order should be zero, using ,Internal Order Settlement"],
+		"ObjectCount" : "51 | 38%"
+	},{
+		"Node" : 3,
+		"attributes" : ["Activity Type serve as serve as tracing factors for"],
+		"objects" : ["Cost Center","Internal Order","Segment","Project","Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity","General Ledger (G/L)","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data"," the construction of a crane (motor design, building the chassis, etc.), normally affects ≥ o ,Profit Center","CO Object","Work Breakdown Structure (WBS)","Cost Allocation"," allocates costs to th ,Receiver","Receiver"," the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement","Sales Order","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement","Profitabilility Segment","Asset"," or leave unrestricted by entering an asterisk (*)  ,Activity Type Master Data","Activity Type Master Data","Secondary Cost"],
+		"own_objects" : ["Cost Center","Internal Order","Segment","Project","Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity","General Ledger (G/L)","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data"," the construction of a crane (motor design, building the chassis, etc.), normally affects ≥ o ,Profit Center","CO Object","Work Breakdown Structure (WBS)","Cost Allocation"," allocates costs to th ,Receiver","Receiver"," the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement","Sales Order","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement","Profitabilility Segment","Asset"],
+		"ObjectCount" : "54 | 40%",
+
+		"children": [{
+			"Node" : 28,
+			"attributes" : ["Cost Allocation  for which you can enter ≤ 8 allowed cost center categories"],
+			"objects" : [" or leave unrestricted by entering an asterisk (*)  ,Activity Type Master Data"],
+			"own_objects" : [" or leave unrestricted by entering an asterisk (*)  ,Activity Type Master Data"],
+			"ObjectCount" : "1 | 0%"
+		},{
+			"Node" : 27,
+			"attributes" : ["Cost Allocation is performed by the system using a"],
+			"objects" : ["Secondary Cost","Activity Type Master Data"],
+			"own_objects" : ["Secondary Cost"],
+			"ObjectCount" : "2 | 1%",
+
+			"children": [{
+				"Node" : 29,
+				"attributes" : ["Secondary Cost has a cost allocation element that is stored in the activity type master record as default values element in","Activity Type can be restricted to the activity type to certain types of cost centers by entering the allowed cost center categories in the"],
+				"objects" : ["Activity Type Master Data"],
+				"own_objects" : ["Activity Type Master Data"],
+				"ObjectCount" : "1 | 0%"
+			}]
+		}]
+	},{
+		"Node" : 2,
+		"attributes" : ["Internal Order Settlement includes a","Internal Order Settlement can be structured flexibly by using one of the many available settlement options by using a"],
+		"objects" : ["Settlement Rule"," such as the settings for settlement, planning, and budgeting, depending on what the order is used for, using the ,Order Type Field","Master Data Fields","Order Type Field","Internal Order Master Data"," the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement","Sales Order","Asset","Profitabilility Segment"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," which would consume time and would result in an additional ,FI Document"," which would consume time and would result in an addition ,FI Document","Statistical Internal Order"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Settled","Receiver"," allocates costs to th ,Receiver","Work Breakdown Structure (WBS)","CO Object"," the construction of a crane (motor design, building the chassis, etc.), normally affects ≥ o ,Profit Center"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," you must specify that code user links to eac ,Cost Center"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Currency","Master Data Record","Country Chart of Accounts","Fiscal Year","Chart of Accounts","General Ledger (G/L)","Internal Activity","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Order","Project","Segment","Internal Order","Cost Center"],
+		"own_objects" : ["Settlement Rule"],
+		"ObjectCount" : "55 | 41%",
+
+		"children": [{
+			"Node" : 31,
+			"attributes" : ["Settlement Rule is defined in the record of the order's"],
+			"objects" : ["Internal Order Master Data"," such as the settings for settlement, planning, and budgeting, depending on what the order is used for, using the ,Order Type Field","Master Data Fields","Order Type Field"],
+			"own_objects" : ["Internal Order Master Data"],
+			"ObjectCount" : "4 | 2%",
+
+			"children": [{
+				"Node" : 33,
+				"attributes" : ["Internal Order Master Data  defines certain order characteristics"],
+				"objects" : [" such as the settings for settlement, planning, and budgeting, depending on what the order is used for, using the ,Order Type Field"],
+				"own_objects" : [" such as the settings for settlement, planning, and budgeting, depending on what the order is used for, using the ,Order Type Field"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 32,
+				"attributes" : ["Internal Order Master Data has the most important field in the internal order master called the"],
+				"objects" : ["Order Type Field","Master Data Fields"],
+				"own_objects" : ["Order Type Field"],
+				"ObjectCount" : "2 | 1%",
+
+				"children": [{
+					"Node" : 34,
+					"attributes" : ["Order Type Field allows you to specify the default values for the different"],
+					"objects" : ["Master Data Fields"],
+					"own_objects" : ["Master Data Fields"],
+					"ObjectCount" : "1 | 0%"
+				}]
+			}]
+		},{
+			"Node" : 30,
+			"attributes" : ["Activity Type serve as serve as tracing factors for","Statistical Key Figures consist of ≥ o","Cost Allocation allocated as a debit to the ","Statistical Key Figure e.g. “Number of Employees” when can't determine sensible/countable output quantities to allocate to CCtrs that a","Internal Order Settlement can (and no impending system restrictions e.g. locks prevent settlement) be made to different types of","Settlement Rule may specify that all of the costs on the order are settled to a single or may be split to multiple"],
+			"objects" : ["Cost Center","Internal Order","Segment","Project","Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity"," the balance of the internal order should be zero, using ,Internal Order Settlement","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data"," the construction of a crane (motor design, building the chassis, etc.), normally affects ≥ o ,Profit Center","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Receiver","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," using ,Internal Order Settlement","Sales Order","Asset","Profitabilility Segment","General Ledger (G/L)"],
+			"own_objects" : ["Cost Center","Internal Order","Segment","Project","Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity"," the balance of the internal order should be zero, using ,Internal Order Settlement","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data"," the construction of a crane (motor design, building the chassis, etc.), normally affects ≥ o ,Profit Center","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Receiver","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," using ,Internal Order Settlement"],
+			"ObjectCount" : "50 | 37%",
+
+			"children": [{
+				"Node" : 38,
+				"attributes" : ["Receiver of an internal order settlement may be (with cost collector) a"],
+				"objects" : ["Sales Order"],
+				"own_objects" : ["Sales Order"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 37,
+				"attributes" : ["Receiver of an internal order settlement may be an"],
+				"objects" : ["Asset"],
+				"own_objects" : ["Asset"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 36,
+				"attributes" : ["Receiver of an internal order settlement may be a"],
+				"objects" : ["Profitabilility Segment"],
+				"own_objects" : ["Profitabilility Segment"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 35,
+				"attributes" : ["Universal Journal (ACDOCA) consists of","Receiver of an internal order settlement may be an account in the"],
+				"objects" : ["General Ledger (G/L)"],
+				"own_objects" : ["General Ledger (G/L)"],
+				"ObjectCount" : "1 | 0%"
+			}]
+		}]
+	},{
+		"Node" : 1,
+		"attributes" : ["FI is a primary source of expense or depreciation data for","Universal Journal (ACDOCA) consists of"],
+		"objects" : ["CO","Routing","Bill of Material (BOM)","Product","Operating Concern","Cost Settlement","ABC Process","Revenue","Profitability Analysis (CO-PA)"," the costs have to be passed on to their final destination, i.e. ,Internal Order Settlement"," the costs have to be passed on to their final destination, such as ,Profitability Segment"," the costs have to be passed on to their final destination, such as ,Fixed Asset"," the costs have to be passed on to their final destination, such as ,Cost Center"," monitoring, and reporting processes, before ,Internal Order Settlement"," collecting, monitoring, and settling costs of certain operations and tasks in an ,Organization"," & called ,Orders with Revenue"," & called ,Accrual Orders"," such as building a storage facility, & called ,Investment Orders"," such as conducting a trade fair or tracking costs for maintenance and repair work, & called ,Overhead Orders"," monitoring, and allocating ,Costs","Internal Orders"," the construction of a crane (motor design, building the chassis, etc.), normally affects ≥ o ,Profit Center","Order","Project"," the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," which would consume time and would result in an additional ,FI Document"," which would consume time and would result in an addition ,FI Document","Statistical Internal Order"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Settled"," allocates costs to th ,Receiver","Work Breakdown Structure (WBS)","CO Object","Fixed Asset"," entered manually, or can be derived automatically from other characteristics, e.g. ,Plant"," entered manually, or can be derived automatically from other characteristics, e.g. ,Material"," as master data is ,Time Dependent"," the revenue postings are transferred to ,Profit Center Accounting (PCA)","Production Order","Business Process"," as ,Revenue"," as ,Cost","Profit and Loss","Balance Sheet"," or ,Organization","Profit Center Accounting (PCA)"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," you must specify that code user links to eac ,Cost Center","Profit Center"," mostly represented by a ,Profit Center","Standard Hierarchy (SH)"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Currency","Master Data Record","Country Chart of Accounts","Fiscal Year","Chart of Accounts","Internal Activity","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Overhead","Segment","Cost Object","Internal Order","Cost Center"],
+		"own_objects" : ["CO"],
+		"ObjectCount" : "83 | 61%",
+
+		"children": [{
+			"Node" : 43,
+			"attributes" : ["CO consists of controlling costs for","Profitability Segment does not have a master record as it combines characteristics such as"],
+			"objects" : ["Product","Routing","Bill of Material (BOM)"],
+			"own_objects" : ["Product"],
+			"ObjectCount" : "3 | 2%",
+
+			"children": [{
+				"Node" : 45,
+				"attributes" : ["Product costing draws on"],
+				"objects" : ["Routing"],
+				"own_objects" : ["Routing"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 44,
+				"attributes" : ["Product costing draws on"],
+				"objects" : ["Bill of Material (BOM)"],
+				"own_objects" : ["Bill of Material (BOM)"],
+				"ObjectCount" : "1 | 0%"
+			}]
+		},{
+			"Node" : 42,
+			"attributes" : ["CO consists of","Universal Journal (ACDOCA) consists of"],
+			"objects" : ["Profitability Analysis (CO-PA)","Cost Object","Cost Settlement","ABC Process","Revenue"," the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," which would consume time and would result in an additional ,FI Document"," which would consume time and would result in an addition ,FI Document","Statistical Internal Order"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Settled"," allocates costs to th ,Receiver","Work Breakdown Structure (WBS)","CO Object"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," you must specify that code user links to eac ,Cost Center"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Operating Concern","Company Code","Currency","Master Data Record","Country Chart of Accounts","Fiscal Year","Chart of Accounts","Internal Activity","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Segment","Internal Order","Cost Center"],
+			"own_objects" : ["Profitability Analysis (CO-PA)","Cost Object"],
+			"ObjectCount" : "48 | 35%",
+
+			"children": [{
+				"Node" : 49,
+				"attributes" : ["Profitability Analysis (CO-PA) receives ≥ o"],
+				"objects" : ["Cost Settlement"],
+				"own_objects" : ["Cost Settlement"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 48,
+				"attributes" : ["Profitability Analysis (CO-PA) receives ≥ o"],
+				"objects" : ["ABC Process"],
+				"own_objects" : ["ABC Process"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 47,
+				"attributes" : ["Profitability Analysis (CO-PA) receives ≥ one element ","Orders with Revenue category is used to track"],
+				"objects" : ["Revenue","Segment"," you derive the segment via a profit center, entered in ,Cost Center Master Data"],
+				"own_objects" : ["Revenue","Segment"," you derive the segment via a profit center, entered in ,Cost Center Master Data"],
+				"ObjectCount" : "3 | 2%"
+			},{
+				"Node" : 46,
+				"attributes" : ["Organization enterprise's external market segments are represented by its","Profitability Analysis (CO-PA) can be used within the"],
+				"objects" : ["Cost Center","Internal Order","Segment","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code","Operating Concern"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," using ,Internal Order Settlement"," the balance of the internal order should be zero, using ,Internal Order Settlement"],
+				"own_objects" : ["Cost Center","Internal Order","Segment","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code","Operating Concern"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," using ,Internal Order Settlement"," the balance of the internal order should be zero, using ,Internal Order Settlement"],
+				"ObjectCount" : "43 | 32%"
+			}]
+		},{
+			"Node" : 41,
+			"attributes" : ["CO has a flexible Controlling (CO) tool that can be used for various purposes called"],
+			"objects" : ["Cost Center","Internal Order","Segment","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Internal Orders"," the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," the costs have to be passed on to their final destination, i.e. ,Internal Order Settlement"," the costs have to be passed on to their final destination, such as ,Profitability Segment"," the costs have to be passed on to their final destination, such as ,Fixed Asset"," the costs have to be passed on to their final destination, such as ,Cost Center"," monitoring, and reporting processes, before ,Internal Order Settlement"," collecting, monitoring, and settling costs of certain operations and tasks in an ,Organization"," & called ,Orders with Revenue"," & called ,Accrual Orders"," such as building a storage facility, & called ,Investment Orders"," such as conducting a trade fair or tracking costs for maintenance and repair work, & called ,Overhead Orders"," monitoring, and allocating ,Costs"],
+			"own_objects" : ["Cost Center","Internal Order","Segment","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Internal Orders"," the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"],
+			"ObjectCount" : "54 | 40%",
+
+			"children": [{
+				"Node" : 60,
+				"attributes" : ["Internal Orders  task when complete"],
+				"objects" : [" the costs have to be passed on to their final destination, i.e. ,Internal Order Settlement"],
+				"own_objects" : [" the costs have to be passed on to their final destination, i.e. ,Internal Order Settlement"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 59,
+				"attributes" : ["Internal Orders  task when complete"],
+				"objects" : [" the costs have to be passed on to their final destination, such as ,Profitability Segment"],
+				"own_objects" : [" the costs have to be passed on to their final destination, such as ,Profitability Segment"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 58,
+				"attributes" : ["Internal Orders  task when complete"],
+				"objects" : [" the costs have to be passed on to their final destination, such as ,Fixed Asset"],
+				"own_objects" : [" the costs have to be passed on to their final destination, such as ,Fixed Asset"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 57,
+				"attributes" : ["Internal Orders  task when complete"],
+				"objects" : [" the costs have to be passed on to their final destination, such as ,Cost Center"],
+				"own_objects" : [" the costs have to be passed on to their final destination, such as ,Cost Center"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 56,
+				"attributes" : ["Internal Orders  are usually used as an interim collector of costs and aid the planning"],
+				"objects" : [" monitoring, and reporting processes, before ,Internal Order Settlement"],
+				"own_objects" : [" monitoring, and reporting processes, before ,Internal Order Settlement"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 55,
+				"attributes" : ["Internal Orders  can use internal orders for planning"],
+				"objects" : [" collecting, monitoring, and settling costs of certain operations and tasks in an ,Organization"],
+				"own_objects" : [" collecting, monitoring, and settling costs of certain operations and tasks in an ,Organization"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 54,
+				"attributes" : ["Internal Orders  replace the cost accounting parts of Sales and Distribution (SD) sales orders if SD is not being used"],
+				"objects" : [" & called ,Orders with Revenue"],
+				"own_objects" : [" & called ,Orders with Revenue"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 53,
+				"attributes" : ["Internal Orders  offset postings of accrued costs (costs calculated in CO) to cost centers"],
+				"objects" : [" & called ,Accrual Orders"],
+				"own_objects" : [" & called ,Accrual Orders"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 52,
+				"attributes" : ["Internal Orders  monitor costs incurred in the production of a fixed asset"],
+				"objects" : [" such as building a storage facility, & called ,Investment Orders"],
+				"own_objects" : [" such as building a storage facility, & called ,Investment Orders"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 51,
+				"attributes" : ["Internal Orders  monitor overhead costs incurred for a particular purpose"],
+				"objects" : [" such as conducting a trade fair or tracking costs for maintenance and repair work, & called ,Overhead Orders"],
+				"own_objects" : [" such as conducting a trade fair or tracking costs for maintenance and repair work, & called ,Overhead Orders"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 50,
+				"attributes" : ["Internal Orders  provide capabilities for planning"],
+				"objects" : [" monitoring, and allocating ,Costs"],
+				"own_objects" : [" monitoring, and allocating ,Costs"],
+				"ObjectCount" : "1 | 0%"
+			}]
+		},{
+			"Node" : 40,
+			"attributes" : ["Internal Order Settlement includes a","Internal Order Settlement can be structured flexibly by using one of the many available settlement options by using a","Activity Type serve as serve as tracing factors for","Statistical Key Figures consist of ≥ o","Cost Allocation allocated as a debit to the ","Statistical Key Figure e.g. “Number of Employees” when can't determine sensible/countable output quantities to allocate to CCtrs that a","Internal Order Settlement can (and no impending system restrictions e.g. locks prevent settlement) be made to different types of","Settlement Rule may specify that all of the costs on the order are settled to a single or may be split to multiple"],
+			"objects" : ["Cost Center","Internal Order","Segment"," the balance of the internal order should be zero, using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data"," using ,Internal Order Settlement","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object","Order"," the construction of a crane (motor design, building the chassis, etc.), normally affects ≥ o ,Profit Center","Project"],
+			"own_objects" : ["Cost Center","Internal Order","Segment"," the balance of the internal order should be zero, using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data"," using ,Internal Order Settlement","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"],
+			"ObjectCount" : "45 | 33%",
+
+			"children": [{
+				"Node" : 62,
+				"attributes" : ["CO has the account assignment object for cost/revenue","Activity Type supply outputs by one (sending) cost center to ≥ one oth","Receiver of an internal order settlement may be a"],
+				"objects" : ["Order"],
+				"own_objects" : ["Order"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 61,
+				"attributes" : ["CO has the account assignment object for cost/revenue","Receiver of an internal order settlement may be a"],
+				"objects" : ["Project"," the construction of a crane (motor design, building the chassis, etc.), normally affects ≥ o ,Profit Center"],
+				"own_objects" : ["Project"],
+				"ObjectCount" : "2 | 1%",
+
+				"children": [{
+					"Node" : 63,
+					"attributes" : ["Project  for example"],
+					"objects" : [" the construction of a crane (motor design, building the chassis, etc.), normally affects ≥ o ,Profit Center"],
+					"own_objects" : [" the construction of a crane (motor design, building the chassis, etc.), normally affects ≥ o ,Profit Center"],
+					"ObjectCount" : "1 | 0%"
+				}]
+			}]
+		},{
+			"Node" : 39,
+			"attributes" : ["Profit Center Accounting (PCA) PCA's profit-related postings must be summerized by the system before you can analyze profit by ","CO posting leads to an assignment of the cost objects in the corresponding"],
+			"objects" : ["Fixed Asset"," entered manually, or can be derived automatically from other characteristics, e.g. ,Plant"," entered manually, or can be derived automatically from other characteristics, e.g. ,Material"," as master data is ,Time Dependent"," the revenue postings are transferred to ,Profit Center Accounting (PCA)","Production Order","Business Process"," as ,Revenue"," as ,Cost","Profit and Loss","Balance Sheet"," or ,Organization","Profit Center Accounting (PCA)","Profit Center","Standard Hierarchy (SH)","Overhead","Cost Object"," the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," which would consume time and would result in an additional ,FI Document"," which would consume time and would result in an addition ,FI Document","Statistical Internal Order"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Settled"," allocates costs to th ,Receiver","Work Breakdown Structure (WBS)","CO Object"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," you must specify that code user links to eac ,Cost Center"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Currency","Master Data Record","Country Chart of Accounts","Fiscal Year","Chart of Accounts","Internal Activity","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Segment","Internal Order","Cost Center"],
+			"own_objects" : [],
+			"ObjectCount" : "59 | 44%",
+
+			"children": [{
+				"Node" : 79,
+				"attributes" : ["Profit Center can indirectly be assigned via the CCtr fixed asset master record stored in ≥ o"],
+				"objects" : ["Fixed Asset"],
+				"own_objects" : ["Fixed Asset"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 78,
+				"attributes" : ["Profit Center  always one of the characteristics"],
+				"objects" : [" entered manually, or can be derived automatically from other characteristics, e.g. ,Plant"],
+				"own_objects" : [" entered manually, or can be derived automatically from other characteristics, e.g. ,Plant"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 77,
+				"attributes" : ["Profit Center  always one of the characteristics"],
+				"objects" : [" entered manually, or can be derived automatically from other characteristics, e.g. ,Material"],
+				"own_objects" : [" entered manually, or can be derived automatically from other characteristics, e.g. ,Material"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 76,
+				"attributes" : ["Profit Center  you can create different data for different periods"],
+				"objects" : [" as master data is ,Time Dependent"],
+				"own_objects" : [" as master data is ,Time Dependent"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 75,
+				"attributes" : ["Profit Center  assignment is determined in the sales order"],
+				"objects" : [" the revenue postings are transferred to ,Profit Center Accounting (PCA)"],
+				"own_objects" : [" the revenue postings are transferred to ,Profit Center Accounting (PCA)"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 74,
+				"attributes" : ["Profit Center field included in the master records of ≥ o"],
+				"objects" : ["Production Order"],
+				"own_objects" : ["Production Order"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 73,
+				"attributes" : ["Profit Center field included in the master records of ≥ o"],
+				"objects" : ["Business Process"],
+				"own_objects" : ["Business Process"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 72,
+				"attributes" : ["Profit Center  assign a profit center to each object for which costs or revenues are incurred"],
+				"objects" : [" as ,Revenue"],
+				"own_objects" : [" as ,Revenue"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 71,
+				"attributes" : ["Profit Center  assign a profit center to each object for which costs or revenues are incurred"],
+				"objects" : [" as ,Cost"],
+				"own_objects" : [" as ,Cost"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 70,
+				"attributes" : ["Profit Center are unique in that they can be assigned to transactions affecting the"],
+				"objects" : ["Profit and Loss"],
+				"own_objects" : ["Profit and Loss"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 69,
+				"attributes" : ["Profit Center are unique in that they can be assigned to transactions in the"],
+				"objects" : ["Balance Sheet"],
+				"own_objects" : ["Balance Sheet"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 68,
+				"attributes" : ["Profit Center  essentially become companies within the company"],
+				"objects" : [" or ,Organization"],
+				"own_objects" : [" or ,Organization"],
+				"ObjectCount" : "1 | 0%"
+			},{
+				"Node" : 67,
+				"attributes" : ["Profit Center represented in"],
+				"objects" : ["Profit Center","Profit Center Accounting (PCA)"],
+				"own_objects" : ["Profit Center","Profit Center Accounting (PCA)"],
+				"ObjectCount" : "2 | 1%"
+			},{
+				"Node" : 66,
+				"attributes" : ["Profit Center the assignment to a node in the profit center is defined by the"],
+				"objects" : ["Standard Hierarchy (SH)"," the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," which would consume time and would result in an additional ,FI Document"," which would consume time and would result in an addition ,FI Document","Statistical Internal Order"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Settled"," allocates costs to th ,Receiver","Work Breakdown Structure (WBS)","CO Object"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," you must specify that code user links to eac ,Cost Center"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Currency","Master Data Record","Country Chart of Accounts","Fiscal Year","Chart of Accounts","Internal Activity","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Overhead","Segment","Internal Order","Cost Center"],
+				"own_objects" : ["Standard Hierarchy (SH)"],
+				"ObjectCount" : "44 | 32%",
+
+				"children": [{
+					"Node" : 80,
+					"attributes" : ["CO consists of controlling costs for","Standard Hierarchy (SH) node must be filled so it can be used as a control feature in CO of"],
+					"objects" : ["Cost Center","Internal Order","Segment","Overhead","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," using ,Internal Order Settlement"," the balance of the internal order should be zero, using ,Internal Order Settlement"],
+					"own_objects" : ["Cost Center","Internal Order","Segment","Overhead","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," using ,Internal Order Settlement"," the balance of the internal order should be zero, using ,Internal Order Settlement"],
+					"ObjectCount" : "43 | 32%"
+				}]
+			},{
+				"Node" : 65,
+				"attributes" : ["CO consists of","Universal Journal (ACDOCA) consists of"],
+				"objects" : ["Cost Center","Internal Order"," the balance of the internal order should be zero, using ,Internal Order Settlement","Segment","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," using ,Internal Order Settlement","Cost Object"],
+				"own_objects" : ["Cost Center","Internal Order"," the balance of the internal order should be zero, using ,Internal Order Settlement","Segment","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Internal Activity","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," using ,Internal Order Settlement"],
+				"ObjectCount" : "43 | 32%",
+
+				"children": [{
+					"Node" : 81,
+					"attributes" : ["Profitability Analysis (CO-PA) receives settlements of production variances from ≥ o","Statistical Key Figures are nonmonetary information that you can plan and post on ≥ one oth","Profit Center field included in the master records of ≥ o"],
+					"objects" : ["Cost Object"],
+					"own_objects" : ["Cost Object"],
+					"ObjectCount" : "1 | 0%"
+				}]
+			},{
+				"Node" : 64,
+				"attributes" : ["Internal Order Settlement includes a","Internal Order Settlement can be structured flexibly by using one of the many available settlement options by using a","Activity Type serve as serve as tracing factors for","CO has a flexible Controlling (CO) tool that can be used for various purposes called","Statistical Key Figures consist of ≥ o","Cost Allocation allocated as a debit to the ","Statistical Key Figure e.g. “Number of Employees” when can't determine sensible/countable output quantities to allocate to CCtrs that a","Internal Order Settlement can (and no impending system restrictions e.g. locks prevent settlement) be made to different types of","Settlement Rule may specify that all of the costs on the order are settled to a single or may be split to multiple","CO consists of","Universal Journal (ACDOCA) consists of","Statistical Key Figures calculates","Profit Center the assignment to a node in the profit center is defined by the","CO consists of controlling costs for","Organization enterprise's external market segments are represented by its","Profitability Analysis (CO-PA) can be used within the","Standard Hierarchy (SH) node must be filled so it can be used as a control feature in CO of","Profitability Analysis (CO-PA) receives ≥ o","Profitability Analysis (CO-PA) receives settlements of costs from ≥ o","Overhead draws on ≥ o","CO has the account assignment object for cost/revenue","Overhead Cost Controlling (CO-OM) posts costs to ≥ o","Overhead Cost Controlling (CO-OM) posts costs to ≥ o","Activity Type defines the type of activity that can be provided by a","Activity Type supply outputs by one (sending) cost center to ≥ one oth","Activity Type represent the utilization of resources for the sending","Operating Concern can be assigned thus analyse together several of","Profit Center to which you assign the","Statistical Key Figures are nonmonetary information that you can plan and post on ≥ o","Additional Key Figures and as distribution factors to distribute cost from one CCtr to another","Additional Key Figures example is distributing a facility sq. M (or Foot) space CCtr used by ≥ one oth","Profit Center field included in the master records of ≥ o","Profit Center field included in the master records of ≥ o","FI postings could be assigned to a profit center with or without a","Activity Type classifies the activities performed within a company by one or several","Cost Allocation allocated as a credit to the providing quantity and costs of the sending ","Internal Orders various purposes may include e.g. to track costs and revenues within a","Receiver of an internal order settlement may be a","Settlement Rule must be defined for each"],
+				"objects" : ["Work Breakdown Structure (WBS)"," the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," which would consume time and would result in an additional ,FI Document"," which would consume time and would result in an addition ,FI Document","Statistical Internal Order"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Settled"," allocates costs to th ,Receiver","CO Object"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," you must specify that code user links to eac ,Cost Center"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Currency","Master Data Record","Country Chart of Accounts","Fiscal Year","Chart of Accounts","Internal Activity","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Segment","Internal Order","Cost Center"],
+				"own_objects" : [],
+				"ObjectCount" : "42 | 31%",
+
+				"children": [{
+					"Node" : 85,
+					"attributes" : ["Internal Order can be marked as posted to as a"],
+					"objects" : ["Cost Center","Internal Order","Segment","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"],
+					"own_objects" : ["Cost Center","Internal Order","Segment","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"],
+					"ObjectCount" : "36 | 26%"
+				},{
+					"Node" : 84,
+					"attributes" : ["CO Area each must have a unique SH that includes all CC created in that CO area's"],
+					"objects" : [" the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Settled","Internal Activity"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," which would consume time and would result in an additional ,FI Document"," which would consume time and would result in an addition ,FI Document","Statistical Internal Order"," allocates costs to th ,Receiver","Work Breakdown Structure (WBS)","CO Object"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Segment","Internal Order","Cost Center"],
+					"own_objects" : [],
+					"ObjectCount" : "36 | 26%",
+
+					"children": [{
+						"Node" : 87,
+						"attributes" : ["Cost Center can then allocate CO-OM costs to ≥ o"],
+						"objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","Internal Activity","CO Object","Work Breakdown Structure (WBS)","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," using ,Internal Order Settlement"," the balance of the internal order should be zero, using ,Internal Order Settlement"],
+						"own_objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","Internal Activity","CO Object","Work Breakdown Structure (WBS)","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," using ,Internal Order Settlement"," the balance of the internal order should be zero, using ,Internal Order Settlement"],
+						"ObjectCount" : "17 | 12%"
+					},{
+						"Node" : 86,
+						"attributes" : ["Internal Order can be marked as posted to as a"],
+						"objects" : [" mostly represented by a ,Profit Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Segment","Functional Area"," in ,Control Data"," allocates costs to th ,Receiver","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," which would consume time and would result in an additional ,FI Document"," which would consume time and would result in an addition ,FI Document","Statistical Internal Order","Work Breakdown Structure (WBS)","CO Object"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Internal Order","Cost Center"],
+						"own_objects" : [" mostly represented by a ,Profit Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Segment","Functional Area"," in ,Control Data"," allocates costs to th ,Receiver","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"],
+						"ObjectCount" : "30 | 22%",
+
+						"children": [{
+							"Node" : 88,
+							"attributes" : ["Cost Center can then allocate CO-OM costs to ≥ o"],
+							"objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Object","Work Breakdown Structure (WBS)","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"],
+							"own_objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Object","Work Breakdown Structure (WBS)","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"],
+							"ObjectCount" : "11 | 8%"
+						}]
+					}]
+				},{
+					"Node" : 83,
+					"attributes" : ["Statistical Internal Order then you can assign cost to the order in addition to the posting on a real","Statistical Internal Order advantage that you can analyze the cost on the order and on the cost center at once for the","Statistical Internal Order and without the requirement to allocate the cost to other cost objects later of a"],
+					"objects" : [" you must specify that code user links to eac ,Cost Center","Currency","Master Data Record","Country Chart of Accounts","Fiscal Year","Chart of Accounts"," the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement","Statistical Internal Order"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Settled"," allocates costs to th ,Receiver","Work Breakdown Structure (WBS)","CO Object"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Internal Activity","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Segment","Internal Order","Cost Center"],
+					"own_objects" : [],
+					"ObjectCount" : "39 | 29%",
+
+					"children": [{
+						"Node" : 90,
+						"attributes" : ["Internal Order can be marked as posted to as a"],
+						"objects" : ["Statistical Internal Order"," allocates costs to th ,Receiver","Work Breakdown Structure (WBS)","CO Object"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," you must specify that code user links to eac ,Cost Center"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Currency","Master Data Record","Country Chart of Accounts","Fiscal Year","Chart of Accounts","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Segment","Internal Order","Cost Center"],
+						"own_objects" : ["Statistical Internal Order"],
+						"ObjectCount" : "33 | 24%",
+
+						"children": [{
+							"Node" : 91,
+							"attributes" : ["Internal Order is a real"],
+							"objects" : ["Cost Center","Internal Order","Segment","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver"],
+							"own_objects" : ["Cost Center","Internal Order","Segment","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","CO Object","Work Breakdown Structure (WBS)"," allocates costs to th ,Receiver"],
+							"ObjectCount" : "32 | 23%"
+						}]
+					},{
+						"Node" : 89,
+						"attributes" : ["CO Area each must have a unique SH that includes all CC created in that CO area's"],
+						"objects" : [" the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Settled","Internal Activity","Statistical Internal Order"," allocates costs to th ,Receiver","Work Breakdown Structure (WBS)","CO Object"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Segment","Internal Order","Cost Center"],
+						"own_objects" : [],
+						"ObjectCount" : "33 | 24%",
+
+						"children": [{
+							"Node" : 93,
+							"attributes" : ["Cost Center can then allocate CO-OM costs to ≥ o"],
+							"objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","Internal Activity","CO Object","Work Breakdown Structure (WBS)","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," using ,Internal Order Settlement"," the balance of the internal order should be zero, using ,Internal Order Settlement"],
+							"own_objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","Internal Activity","CO Object","Work Breakdown Structure (WBS)","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," using ,Internal Order Settlement"," the balance of the internal order should be zero, using ,Internal Order Settlement"],
+							"ObjectCount" : "14 | 10%"
+						},{
+							"Node" : 92,
+							"attributes" : ["Internal Order can be marked as posted to as a"],
+							"objects" : ["Statistical Internal Order"," allocates costs to th ,Receiver","Work Breakdown Structure (WBS)","CO Object"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Segment","Internal Order","Cost Center"],
+							"own_objects" : [],
+							"ObjectCount" : "27 | 20%",
+
+							"children": [{
+								"Node" : 95,
+								"attributes" : ["Cost Center can then allocate CO-OM costs to ≥ o"],
+								"objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Object","Work Breakdown Structure (WBS)","Statistical Internal Order"],
+								"own_objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Object","Work Breakdown Structure (WBS)","Statistical Internal Order"],
+								"ObjectCount" : "8 | 5%"
+							},{
+								"Node" : 94,
+								"attributes" : ["Internal Order is a real"],
+								"objects" : [" allocates costs to th ,Receiver"," mostly represented by a ,Profit Center","Segment"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," in ,Control Data","Functional Area","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units","Work Breakdown Structure (WBS)","CO Object"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Internal Order","Cost Center"],
+								"own_objects" : [" allocates costs to th ,Receiver"," mostly represented by a ,Profit Center","Segment"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," in ,Control Data","Functional Area","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"],
+								"ObjectCount" : "26 | 19%",
+
+								"children": [{
+									"Node" : 96,
+									"attributes" : ["Cost Center can then allocate CO-OM costs to ≥ o"],
+									"objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Object","Work Breakdown Structure (WBS)"],
+									"own_objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Object"],
+									"ObjectCount" : "7 | 5%",
+
+									"children": [{
+										"Node" : 97,
+										"attributes" : ["CO Object can be an element in"],
+										"objects" : ["Work Breakdown Structure (WBS)"],
+										"own_objects" : ["Work Breakdown Structure (WBS)"],
+										"ObjectCount" : "1 | 0%"
+									}]
+								}]
+							}]
+						}]
+					}]
+				},{
+					"Node" : 82,
+					"attributes" : ["CO Object can be a","CO Object can be a"],
+					"objects" : [" if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," which would consume time and would result in an additional ,FI Document"," which would consume time and would result in an addition ,FI Document"," the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement","Statistical Internal Order"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Settled"," allocates costs to th ,Receiver","CO Object"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," you must specify that code user links to eac ,Cost Center"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Currency","Master Data Record","Country Chart of Accounts","Fiscal Year","Chart of Accounts","Internal Activity","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Segment","Internal Order","Cost Center"],
+					"own_objects" : [],
+					"ObjectCount" : "41 | 30%",
+
+					"children": [{
+						"Node" : 100,
+						"attributes" : ["Internal Order can be marked as posted to as a"],
+						"objects" : ["Cost Center","Internal Order","Segment","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","CO Object"," allocates costs to th ,Receiver","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"],
+						"own_objects" : ["Cost Center","Internal Order","Segment","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Chart of Accounts","Fiscal Year","Country Chart of Accounts","Master Data Record","Currency","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," mostly represented by a ,Profit Center"," you must specify that code user links to eac ,Cost Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Functional Area"," in ,Control Data","CO Object"," allocates costs to th ,Receiver","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"],
+						"ObjectCount" : "35 | 26%"
+					},{
+						"Node" : 99,
+						"attributes" : ["CO Area each must have a unique SH that includes all CC created in that CO area's"],
+						"objects" : [" the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Settled","Internal Activity"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," which would consume time and would result in an additional ,FI Document"," which would consume time and would result in an addition ,FI Document","Statistical Internal Order"," allocates costs to th ,Receiver","CO Object"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Segment","Internal Order","Cost Center"],
+						"own_objects" : [],
+						"ObjectCount" : "35 | 26%",
+
+						"children": [{
+							"Node" : 102,
+							"attributes" : ["Cost Center can then allocate CO-OM costs to ≥ o"],
+							"objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","Internal Activity","CO Object","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," using ,Internal Order Settlement"," the balance of the internal order should be zero, using ,Internal Order Settlement"],
+							"own_objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","Internal Activity","CO Object","Settled"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Statistical Internal Order"," which would consume time and would result in an addition ,FI Document"," which would consume time and would result in an additional ,FI Document"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," using ,Internal Order Settlement"," the balance of the internal order should be zero, using ,Internal Order Settlement"],
+							"ObjectCount" : "16 | 11%"
+						},{
+							"Node" : 101,
+							"attributes" : ["Internal Order can be marked as posted to as a"],
+							"objects" : [" mostly represented by a ,Profit Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Segment","Functional Area"," in ,Control Data"," allocates costs to th ,Receiver","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," which would consume time and would result in an additional ,FI Document"," which would consume time and would result in an addition ,FI Document","Statistical Internal Order","CO Object"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Internal Order","Cost Center"],
+							"own_objects" : [" mostly represented by a ,Profit Center"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Segment","Functional Area"," in ,Control Data"," allocates costs to th ,Receiver","CO Area","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Company Code"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost","Cost Center Data"," description, manager, & department to assign the CC), in ,General Information"," in section ,Organizational Units"],
+							"ObjectCount" : "29 | 21%",
+
+							"children": [{
+								"Node" : 103,
+								"attributes" : ["Cost Center can then allocate CO-OM costs to ≥ o"],
+								"objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Object","Statistical Internal Order"," if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"," which would consume time and would result in an additional ,FI Document"," which would consume time and would result in an addition ,FI Document"],
+								"own_objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Object","Statistical Internal Order"],
+								"ObjectCount" : "10 | 7%",
+
+								"children": [{
+									"Node" : 106,
+									"attributes" : ["Statistical Internal Order  should be used"],
+									"objects" : [" if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"],
+									"own_objects" : [" if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object"],
+									"ObjectCount" : "1 | 0%"
+								},{
+									"Node" : 105,
+									"attributes" : ["Statistical Internal Order  and you cannot settle the order later"],
+									"objects" : [" which would consume time and would result in an additional ,FI Document"],
+									"own_objects" : [" which would consume time and would result in an additional ,FI Document"],
+									"ObjectCount" : "1 | 0%"
+								},{
+									"Node" : 104,
+									"attributes" : ["Statistical Internal Order  advantage that you don’t have to settle the order later"],
+									"objects" : [" which would consume time and would result in an addition ,FI Document"],
+									"own_objects" : [" which would consume time and would result in an addition ,FI Document"],
+									"ObjectCount" : "1 | 0%"
+								}]
+							}]
+						}]
+					},{
+						"Node" : 98,
+						"attributes" : ["Statistical Internal Order then you can assign cost to the order in addition to the posting on a real","Statistical Internal Order advantage that you can analyze the cost on the order and on the cost center at once for the","Statistical Internal Order and without the requirement to allocate the cost to other cost objects later of a"],
+						"objects" : [" you must specify that code user links to eac ,Cost Center","Currency","Master Data Record","Country Chart of Accounts","Fiscal Year","Chart of Accounts"," the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement","Statistical Internal Order"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Settled"," allocates costs to th ,Receiver","CO Object"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Internal Activity","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Segment","Internal Order","Cost Center"],
+						"own_objects" : [],
+						"ObjectCount" : "38 | 28%",
+
+						"children": [{
+							"Node" : 108,
+							"attributes" : ["Internal Order can be marked as posted to as a"],
+							"objects" : ["Statistical Internal Order"," allocates costs to th ,Receiver","CO Object"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," you must specify that code user links to eac ,Cost Center"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Currency","Master Data Record","Country Chart of Accounts","Fiscal Year","Chart of Accounts","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Segment","Internal Order","Cost Center"],
+							"own_objects" : ["Statistical Internal Order"],
+							"ObjectCount" : "32 | 23%",
+
+							"children": [{
+								"Node" : 109,
+								"attributes" : ["Internal Order is a real"],
+								"objects" : ["CO Object"," allocates costs to th ,Receiver"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," you must specify that code user links to eac ,Cost Center"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Currency","Master Data Record","Country Chart of Accounts","Fiscal Year","Chart of Accounts","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Segment","Internal Order","Cost Center"],
+								"own_objects" : ["CO Object"],
+								"ObjectCount" : "31 | 23%",
+
+								"children": [{
+									"Node" : 110,
+									"attributes" : ["Internal Order can settle costs to"],
+									"objects" : [" allocates costs to th ,Receiver","Internal Order","Segment","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order"," in ,Control Data","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Cost Center Data"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost"," you must specify that code user links to eac ,Cost Center","Company Code","Currency","Master Data Record","Country Chart of Accounts","Fiscal Year","Chart of Accounts","CO Area","Cost Center"],
+									"own_objects" : [" allocates costs to th ,Receiver","Internal Order","Segment","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order"," in ,Control Data","Functional Consideration","Allocation Criteria","Activities Provided","Physical Location","Management Area","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Cost Center Data"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information"," i.e. ,Cost Determination Function"," i.e. ,Cost Controlling Function"," rent, utility, or any other cost center-relevant ,Cost"],
+									"ObjectCount" : "30 | 22%",
+
+									"children": [{
+										"Node" : 111,
+										"attributes" : ["Cost Center are separate areas where costs are incurred within"],
+										"objects" : ["Cost Center","CO Area"," you must specify that code user links to eac ,Cost Center","Fiscal Year","Company Code","Currency","Master Data Record","Country Chart of Accounts","Chart of Accounts"],
+										"own_objects" : ["Cost Center","CO Area"],
+										"ObjectCount" : "9 | 6%",
+
+										"children": [{
+											"Node" : 115,
+											"attributes" : ["CO Area  where ≥ one company code"],
+											"objects" : [" you must specify that code user links to eac ,Cost Center"],
+											"own_objects" : [" you must specify that code user links to eac ,Cost Center"],
+											"ObjectCount" : "1 | 0%"
+										},{
+											"Node" : 114,
+											"attributes" : ["CO Area & its company codes must use the same variant of"],
+											"objects" : ["Fiscal Year"],
+											"own_objects" : ["Fiscal Year"],
+											"ObjectCount" : "1 | 0%"
+										},{
+											"Node" : 113,
+											"attributes" : ["CO Area in cross-company-code cost accounting can have ≥ zero differe"],
+											"objects" : ["Currency","Company Code"],
+											"own_objects" : ["Currency","Company Code"],
+											"ObjectCount" : "2 | 1%"
+										},{
+											"Node" : 112,
+											"attributes" : ["CO Area & its company codes must use the same operating"],
+											"objects" : ["Chart of Accounts","Master Data Record","Country Chart of Accounts"],
+											"own_objects" : ["Chart of Accounts"],
+											"ObjectCount" : "3 | 2%",
+
+											"children": [{
+												"Node" : 116,
+												"attributes" : ["Chart of Accounts can link these operating accounts to a country-specific alternative account number via a"],
+												"objects" : ["Country Chart of Accounts","Master Data Record"],
+												"own_objects" : ["Country Chart of Accounts"],
+												"ObjectCount" : "2 | 1%",
+
+												"children": [{
+													"Node" : 117,
+													"attributes" : ["Country Chart of Accounts are stored in the accounts'"],
+													"objects" : ["Master Data Record"],
+													"own_objects" : ["Master Data Record"],
+													"ObjectCount" : "1 | 0%"
+												}]
+											}]
+										}]
+									}]
+								}]
+							}]
+						},{
+							"Node" : 107,
+							"attributes" : ["CO Area each must have a unique SH that includes all CC created in that CO area's"],
+							"objects" : [" the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Settled","Internal Activity","Statistical Internal Order"," allocates costs to th ,Receiver","CO Object"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Segment","Internal Order","Cost Center"],
+							"own_objects" : [],
+							"ObjectCount" : "32 | 23%",
+
+							"children": [{
+								"Node" : 119,
+								"attributes" : ["Cost Center can then allocate CO-OM costs to ≥ o"],
+								"objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","Statistical Internal Order","CO Object"," the balance of the internal order should be zero, using ,Internal Order Settlement"," using ,Internal Order Settlement"," its settlement will also occur at the end of its life by an ,Internal Order Settlement"," you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost","Settled","Internal Activity"],
+								"own_objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","Statistical Internal Order","CO Object"],
+								"ObjectCount" : "13 | 9%",
+
+								"children": [{
+									"Node" : 125,
+									"attributes" : ["Internal Order  after settlement"],
+									"objects" : [" the balance of the internal order should be zero, using ,Internal Order Settlement"],
+									"own_objects" : [" the balance of the internal order should be zero, using ,Internal Order Settlement"],
+									"ObjectCount" : "1 | 0%"
+								},{
+									"Node" : 124,
+									"attributes" : ["Internal Order  for which the system automatically generates offsetting credit entries"],
+									"objects" : [" using ,Internal Order Settlement"],
+									"own_objects" : [" using ,Internal Order Settlement"],
+									"ObjectCount" : "1 | 0%"
+								},{
+									"Node" : 123,
+									"attributes" : ["Internal Order  depending on the type of internal order and its business purpose"],
+									"objects" : [" its settlement will also occur at the end of its life by an ,Internal Order Settlement"],
+									"own_objects" : [" its settlement will also occur at the end of its life by an ,Internal Order Settlement"],
+									"ObjectCount" : "1 | 0%"
+								},{
+									"Node" : 122,
+									"attributes" : ["Internal Order  in addition to the real posting"],
+									"objects" : [" you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost"],
+									"own_objects" : [" you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost"],
+									"ObjectCount" : "1 | 0%"
+								},{
+									"Node" : 121,
+									"attributes" : ["Internal Order debits are posted with value type 04 (actual cost) and can be later"],
+									"objects" : ["Settled"],
+									"own_objects" : ["Settled"],
+									"ObjectCount" : "1 | 0%"
+								},{
+									"Node" : 120,
+									"attributes" : ["Internal Order are used to plan/collect/analyze costs arising from ≥ o"],
+									"objects" : ["Internal Activity"],
+									"own_objects" : ["Internal Activity"],
+									"ObjectCount" : "1 | 0%"
+								}]
+							},{
+								"Node" : 118,
+								"attributes" : ["Internal Order can be marked as posted to as a"],
+								"objects" : ["Statistical Internal Order"," allocates costs to th ,Receiver","CO Object"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Segment","Internal Order","Cost Center"],
+								"own_objects" : [],
+								"ObjectCount" : "26 | 19%",
+
+								"children": [{
+									"Node" : 127,
+									"attributes" : ["Cost Center can then allocate CO-OM costs to ≥ o"],
+									"objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Object","Statistical Internal Order"],
+									"own_objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Object","Statistical Internal Order"],
+									"ObjectCount" : "7 | 5%"
+								},{
+									"Node" : 126,
+									"attributes" : ["Internal Order is a real"],
+									"objects" : ["CO Object"," allocates costs to th ,Receiver"," in ,Control Data","Functional Area"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," mostly represented by a ,Profit Center"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Company Code","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Segment","Internal Order","Cost Center"],
+									"own_objects" : [],
+									"ObjectCount" : "25 | 18%",
+
+									"children": [{
+										"Node" : 129,
+										"attributes" : ["Cost Center can then allocate CO-OM costs to ≥ o"],
+										"objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Object"],
+										"own_objects" : ["Cost Center","Internal Order","Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Cost Center"," can pass costs to ≥ o ,Internal Order","CO Object"],
+										"ObjectCount" : "6 | 4%"
+									},{
+										"Node" : 128,
+										"attributes" : ["Internal Order can settle costs to"],
+										"objects" : [" allocates costs to th ,Receiver","Functional Area"," mostly represented by a ,Profit Center"," rent, utility, or any other cost center-relevant ,Cost"," i.e. ,Cost Controlling Function"," i.e. ,Cost Determination Function","Management Area","Physical Location","Activities Provided","Allocation Criteria","Functional Consideration"," in ,Control Data"," you derive the segment via a profit center, entered in ,Cost Center Master Data"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information","Cost Center Data","Segment","Company Code","CO Area"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Internal Order","Cost Center"],
+										"own_objects" : [],
+										"ObjectCount" : "24 | 17%",
+
+										"children": [{
+											"Node" : 143,
+											"attributes" : ["Cost Center  when provides services to ≥ one or more activity to e.g. other CCtr/orders/procs"],
+											"objects" : [" allocates costs to th ,Receiver"],
+											"own_objects" : [" allocates costs to th ,Receiver"],
+											"ObjectCount" : "1 | 0%"
+										},{
+											"Node" : 142,
+											"attributes" : ["Cost Center assign the cost center to organizational units like"],
+											"objects" : ["Functional Area"],
+											"own_objects" : ["Functional Area"],
+											"ObjectCount" : "1 | 0%"
+										},{
+											"Node" : 141,
+											"attributes" : ["Cost Center  belongs to a responsible organizational area"],
+											"objects" : [" mostly represented by a ,Profit Center"],
+											"own_objects" : [" mostly represented by a ,Profit Center"],
+											"ObjectCount" : "1 | 0%"
+										},{
+											"Node" : 140,
+											"attributes" : ["Cost Center  can include payroll"],
+											"objects" : [" rent, utility, or any other cost center-relevant ,Cost"],
+											"own_objects" : [" rent, utility, or any other cost center-relevant ,Cost"],
+											"ObjectCount" : "1 | 0%"
+										},{
+											"Node" : 139,
+											"attributes" : ["Cost Center  differentiated controlling of costs"],
+											"objects" : [" i.e. ,Cost Controlling Function"],
+											"own_objects" : [" i.e. ,Cost Controlling Function"],
+											"ObjectCount" : "1 | 0%"
+										},{
+											"Node" : 138,
+											"attributes" : ["Cost Center  assign overhead costs on utilization of the relevant areas"],
+											"objects" : [" i.e. ,Cost Determination Function"],
+											"own_objects" : [" i.e. ,Cost Determination Function"],
+											"ObjectCount" : "1 | 0%"
+										},{
+											"Node" : 137,
+											"attributes" : ["Cost Center created according to various criteria including"],
+											"objects" : ["Management Area"],
+											"own_objects" : ["Management Area"],
+											"ObjectCount" : "1 | 0%"
+										},{
+											"Node" : 136,
+											"attributes" : ["Cost Center created according to various criteria including"],
+											"objects" : ["Physical Location"],
+											"own_objects" : ["Physical Location"],
+											"ObjectCount" : "1 | 0%"
+										},{
+											"Node" : 135,
+											"attributes" : ["Cost Center created according to various criteria including"],
+											"objects" : ["Activities Provided"],
+											"own_objects" : ["Activities Provided"],
+											"ObjectCount" : "1 | 0%"
+										},{
+											"Node" : 134,
+											"attributes" : ["Cost Center created according to various criteria including"],
+											"objects" : ["Allocation Criteria"],
+											"own_objects" : ["Allocation Criteria"],
+											"ObjectCount" : "1 | 0%"
+										},{
+											"Node" : 133,
+											"attributes" : ["Cost Center created according to various criteria including"],
+											"objects" : ["Functional Consideration"],
+											"own_objects" : ["Functional Consideration"],
+											"ObjectCount" : "1 | 0%"
+										},{
+											"Node" : 132,
+											"attributes" : ["Cost Center has"],
+											"objects" : ["Cost Center Data","Company Code"," in ,Control Data"," in section ,Organizational Units"," description, manager, & department to assign the CC), in ,General Information"," you derive the segment via a profit center, entered in ,Cost Center Master Data","Segment"],
+											"own_objects" : ["Cost Center Data","Company Code"],
+											"ObjectCount" : "7 | 5%",
+
+											"children": [{
+												"Node" : 147,
+												"attributes" : ["Cost Center Data  can lock the cost center against planning and posting activities"],
+												"objects" : [" in ,Control Data"],
+												"own_objects" : [" in ,Control Data"],
+												"ObjectCount" : "1 | 0%"
+											},{
+												"Node" : 146,
+												"attributes" : ["Cost Center Data  contains the standard hierarchy node to which the CC is assigned"],
+												"objects" : [" in section ,Organizational Units"],
+												"own_objects" : [" in section ,Organizational Units"],
+												"ObjectCount" : "1 | 0%"
+											},{
+												"Node" : 145,
+												"attributes" : ["Cost Center Data  basic info (CC name"],
+												"objects" : [" description, manager, & department to assign the CC), in ,General Information"],
+												"own_objects" : [" description, manager, & department to assign the CC), in ,General Information"],
+												"ObjectCount" : "1 | 0%"
+											},{
+												"Node" : 144,
+												"attributes" : ["Profitability Analysis (CO-PA) receives ≥ one element ","Orders with Revenue category is used to track","Revenue for PA is categorised according to ≥ one market reven","Cost Center Data shows the close ties between CO and FI represented by"],
+												"objects" : ["Segment"," you derive the segment via a profit center, entered in ,Cost Center Master Data"],
+												"own_objects" : ["Segment"],
+												"ObjectCount" : "2 | 1%",
+
+												"children": [{
+													"Node" : 148,
+													"attributes" : ["Segment  reporting if required"],
+													"objects" : [" you derive the segment via a profit center, entered in ,Cost Center Master Data"],
+													"own_objects" : [" you derive the segment via a profit center, entered in ,Cost Center Master Data"],
+													"ObjectCount" : "1 | 0%"
+												}]
+											}]
+										},{
+											"Node" : 131,
+											"attributes" : ["Cost Center are separate areas where costs are incurred within"],
+											"objects" : ["Cost Center","CO Area","Company Code"],
+											"own_objects" : ["Cost Center","CO Area"],
+											"ObjectCount" : "3 | 2%",
+
+											"children": [{
+												"Node" : 149,
+												"attributes" : ["Cost Center has","CO Area in cross-company-code cost accounting can have ≥ zero differe","Currency of a CO area can be same (or different) as that of a","Cost Center Data shows the close ties between CO and FI represented by","Cost Center assign the cost center to organizational units like"],
+												"objects" : ["Company Code"],
+												"own_objects" : ["Company Code"],
+												"ObjectCount" : "1 | 0%"
+											}]
+										},{
+											"Node" : 130,
+											"attributes" : ["Cost Center can then allocate CO-OM costs to ≥ o"],
+											"objects" : ["Internal Order"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center","Activity-Based Costing (ABC)","Cost Center"],
+											"own_objects" : [],
+											"ObjectCount" : "5 | 3%",
+
+											"children": [{
+												"Node" : 152,
+												"attributes" : ["Internal Order processes in ≥ one oth"],
+												"objects" : ["Internal Order"],
+												"own_objects" : ["Internal Order"],
+												"ObjectCount" : "1 | 0%"
+											},{
+												"Node" : 151,
+												"attributes" : ["Cost Center processes in","Internal Order processes in"],
+												"objects" : ["Activity-Based Costing (ABC)"," can pass costs to ≥ o ,Internal Order"," can pass costs to ≥ o ,Cost Center"],
+												"own_objects" : ["Activity-Based Costing (ABC)"],
+												"ObjectCount" : "3 | 2%",
+
+												"children": [{
+													"Node" : 154,
+													"attributes" : ["Activity-Based Costing (ABC)  in turn"],
+													"objects" : [" can pass costs to ≥ o ,Internal Order"],
+													"own_objects" : [" can pass costs to ≥ o ,Internal Order"],
+													"ObjectCount" : "1 | 0%"
+												},{
+													"Node" : 153,
+													"attributes" : ["Activity-Based Costing (ABC)  in turn"],
+													"objects" : [" can pass costs to ≥ o ,Cost Center"],
+													"own_objects" : [" can pass costs to ≥ o ,Cost Center"],
+													"ObjectCount" : "1 | 0%"
+												}]
+											},{
+												"Node" : 150,
+												"attributes" : ["Cost Center are separate areas where costs are incurred within","Cost Center can then allocate CO-OM costs to ≥ one oth"],
+												"objects" : ["Cost Center"],
+												"own_objects" : ["Cost Center"],
+												"ObjectCount" : "1 | 0%"
+											}]
+										}]
+									}]
+								}]
+							}]
+						}]
+					}]
+				}]
+			}]
+		}]
+	}]
+}

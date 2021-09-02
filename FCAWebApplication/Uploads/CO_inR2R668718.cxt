@@ -1,0 +1,448 @@
+B
+
+134
+175
+
+FI
+CO
+Profitability Analysis (CO-PA)
+Revenue
+Cost Center
+ABC Process
+Cost Settlement
+Internal Order
+Cost Object
+Segment
+Overhead
+Product
+Bill of Material (BOM)
+Routing
+Project
+Order
+Overhead Cost Controlling (CO-OM)
+External Cost
+Activity-Based Costing (ABC)
+ can pass costs to ≥ o ,Cost Center
+ can pass costs to ≥ o ,Internal Order
+CO Area
+Functional Consideration
+Allocation Criteria
+Activities Provided
+Physical Location
+Management Area
+Activity Type
+Process
+Price
+Internal Activity
+Universal Journal (ACDOCA)
+General Ledger (G/L)
+Asset Accounting (AA)
+Material Ledger (ML)
+Chart of Accounts
+Fiscal Year
+Country Chart of Accounts
+Master Data Record
+Currency
+Company Code
+Organization
+Operating Concern
+ i.e. ,Cost Determination Function
+ i.e. ,Cost Controlling Function
+ rent, utility, or any other cost center-relevant ,Cost
+Cost Center Data
+ description, manager, & department to assign the CC), in ,General Information
+ in section ,Organizational Units
+Organizational Units
+ for ,Standard Hierarchy (SH)
+Standard Hierarchy (SH)
+ mostly represented by a ,Profit Center
+Profit Center
+ you must specify that code user links to eac ,Cost Center
+ you derive the segment via a profit center, entered in ,Cost Center Master Data
+Functional Area
+ in ,Control Data
+Statistical Key Figures
+Cost Center Report
+Additional Key Figures
+Statistical Key Figure
+Employee
+ you need to determine the ,Category Value
+Category Value
+ thus calcs avg. of single values for the ,Period
+Period
+Profit Center Accounting (PCA)
+ or ,Organization
+Balance Sheet
+Profit and Loss
+ as ,Cost
+ as ,Revenue
+Business Process
+Production Order
+ the revenue postings are transferred to ,Profit Center Accounting (PCA)
+ as master data is ,Time Dependent
+ the construction of a crane (motor design, building the chassis, etc.), normally affects ≥ o ,Profit Center
+Profitability Segment
+Customer
+Plant
+Distribution Channel
+ entered manually, or can be derived automatically from other characteristics, e.g. ,Material
+ entered manually, or can be derived automatically from other characteristics, e.g. ,Plant
+Fixed Asset
+CO Object
+Work Breakdown Structure (WBS)
+Cost Allocation
+ allocates costs to th ,Receiver
+Receiver
+Secondary Cost
+Activity Type Master Data
+ or leave unrestricted by entering an asterisk (*)  ,Activity Type Master Data
+ you then to this combination assign a planned ,Activity Allocation Price
+Activity Allocation Price
+Activity Allocation
+Internal Orders
+ monitoring, and allocating ,Costs
+ such as conducting a trade fair or tracking costs for maintenance and repair work, & called ,Overhead Orders
+ such as building a storage facility, & called ,Investment Orders
+ & called ,Accrual Orders
+ & called ,Orders with Revenue
+Orders with Revenue
+Costs
+ they are also used to monitor revenues that unaffect the organization's core business, such as ,Miscellaneous Revenue
+Internal Order Master Data
+Order Type Field
+Master Data Fields
+ such as the settings for settlement, planning, and budgeting, depending on what the order is used for, using the ,Order Type Field
+ collecting, monitoring, and settling costs of certain operations and tasks in an ,Organization
+SAP S/4HANA
+ including planning and posting actual costs) of an ,Internal Order
+Settled
+ you can address other statistical objects, which will be posted statistically, as a ,Statistical Cost
+Statistical Cost
+ but not for allocations and do not count in any reconciliation between CO and other modules, in the ,Client
+Statistical Internal Order
+ which would consume time and would result in an addition ,FI Document
+ which would consume time and would result in an additional ,FI Document
+ if you only want to collect the cost of an object or an action for reporting purposes of a ,CO Object
+ monitoring, and reporting processes, before ,Internal Order Settlement
+ the costs have to be passed on to their final destination, such as ,Cost Center
+ the costs have to be passed on to their final destination, such as ,Fixed Asset
+ the costs have to be passed on to their final destination, such as ,Profitability Segment
+ the costs have to be passed on to their final destination, i.e. ,Internal Order Settlement
+Internal Order Settlement
+ a settlement will occur at the end of each ,Period
+ its settlement will also occur at the end of its life by an ,Internal Order Settlement
+Profitabilility Segment
+Asset
+Sales Order
+Settlement Rule
+ using ,Internal Order Settlement
+ the balance of the internal order should be zero, using ,Internal Order Settlement
+FI is a primary source of expense or depreciation data for
+CO consists of
+Profitability Analysis (CO-PA) receives ≥ one element 
+Profitability Analysis (CO-PA) receives ≥ o
+Profitability Analysis (CO-PA) receives ≥ o
+Profitability Analysis (CO-PA) receives ≥ o
+Profitability Analysis (CO-PA) receives settlements of costs from ≥ o
+Profitability Analysis (CO-PA) receives settlements of production variances from ≥ o
+Revenue for PA is categorised according to ≥ one market reven
+CO consists of controlling costs for
+Overhead draws on ≥ o
+CO consists of controlling costs for
+Product costing draws on
+Product costing draws on
+CO has the account assignment object for cost/revenue
+CO has the account assignment object for cost/revenue
+CO has the account assignment object for cost/revenue
+Overhead Cost Controlling (CO-OM) posts costs to ≥ o
+Overhead Cost Controlling (CO-OM) posts costs to ≥ o
+Overhead Cost Controlling (CO-OM) posts ≥ one process from other S/4HANA applications 
+Cost Center can then allocate CO-OM costs to ≥ one oth
+Cost Center can then allocate CO-OM costs to ≥ o
+Cost Center processes in
+Activity-Based Costing (ABC)  in turn
+Activity-Based Costing (ABC)  in turn
+Internal Order can settle costs to
+Internal Order processes in
+Internal Order processes in ≥ one oth
+Cost Center are separate areas where costs are incurred within
+Cost Center created according to various criteria including
+Cost Center created according to various criteria including
+Cost Center created according to various criteria including
+Cost Center created according to various criteria including
+Cost Center created according to various criteria including
+Activity Type defines the type of activity that can be provided by a
+Activity Type supply outputs by one (sending) cost center to ≥ one oth
+Activity Type supply outputs by one (sending) cost center to ≥ one oth
+Activity Type supply outputs by one (sending) cost center to ≥ one oth
+Activity Type represent the utilization of resources for the sending
+Activity Type valuate activities from a business/mgt. calculation of
+Internal Order are used to plan/collect/analyze costs arising from ≥ o
+Universal Journal (ACDOCA) consists of
+Universal Journal (ACDOCA) consists of
+Universal Journal (ACDOCA) consists of
+Universal Journal (ACDOCA) consists of
+Universal Journal (ACDOCA) consists of
+CO Area & its company codes must use the same operating
+CO Area & its company codes must use the same variant of
+Chart of Accounts can link these operating accounts to a country-specific alternative account number via a
+Country Chart of Accounts are stored in the accounts'
+CO Area in cross-company-code cost accounting can have ≥ zero differe
+Currency of a CO area can be same (or different) as that of a
+Organization enterprise's external market segments are represented by its
+Operating Concern can be assigned thus analyse together several of
+Profitability Analysis (CO-PA) can be used within the
+Cost Center  assign overhead costs on utilization of the relevant areas
+Cost Center  differentiated controlling of costs
+Cost Center  can include payroll
+Cost Center has
+Cost Center Data  basic info (CC name
+Cost Center Data  contains the standard hierarchy node to which the CC is assigned
+Organizational Units  has standard hierarchy node to which the CC is assigned
+Standard Hierarchy (SH) node must be filled so it can be used as a control feature in CO of
+Organizational Units  contains the SH node field to which the CC is assigned
+CO Area each must have a unique SH that includes all CC created in that CO area's
+Cost Center  belongs to a responsible organizational area
+Profit Center to which you assign the
+Cost Center Data shows the close ties between CO and FI represented by
+Cost Center Data shows the close ties between CO and FI represented by
+CO Area  where ≥ one company code
+Segment  reporting if required
+Cost Center assign the cost center to organizational units like
+Cost Center assign the cost center to organizational units like
+Cost Center Data  can lock the cost center against planning and posting activities
+Statistical Key Figures are nonmonetary information that you can plan and post on ≥ o
+Statistical Key Figures are nonmonetary information that you can plan and post on ≥ one oth
+Statistical Key Figures are used as additional reporting info in ≥ o
+Statistical Key Figures calculates
+Statistical Key Figures consist of ≥ o
+Additional Key Figures such as average salaries per
+Additional Key Figures and as distribution factors to distribute cost from one CCtr to another
+Additional Key Figures example is distributing a facility sq. M (or Foot) space CCtr used by ≥ one oth
+Additional Key Figures  needs to calculate the total
+Category Value  Fixed: periodic values can't be added to a total
+Category Value Total: can be added to a total from the periodic values for the
+Profit Center represented in
+Profit Center  essentially become companies within the company
+Profit Center the assignment to a node in the profit center is defined by the
+Profit Center are unique in that they can be assigned to transactions in the
+Profit Center are unique in that they can be assigned to transactions affecting the
+Profit Center  assign a profit center to each object for which costs or revenues are incurred
+Profit Center  assign a profit center to each object for which costs or revenues are incurred
+Profit Center field included in the master records of ≥ o
+Profit Center field included in the master records of ≥ o
+Profit Center field included in the master records of ≥ o
+Profit Center field included in the master records of ≥ o
+Profit Center field included in the master records of ≥ o
+Profit Center  assignment is determined in the sales order
+Profit Center  you can create different data for different periods
+Project  for example
+Profitability Segment does not have a master record as it combines characteristics such as
+Profitability Segment does not have a master record as it combines characteristics such as
+Profitability Segment does not have a master record as it combines characteristics such as
+Profitability Segment does not have a master record as it combines characteristics such as
+Profit Center  always one of the characteristics
+Profit Center  always one of the characteristics
+Profit Center can indirectly be assigned via the CCtr fixed asset master record stored in ≥ o
+Profit Center Accounting (PCA) PCA's profit-related postings must be summerized by the system before you can analyze profit by 
+FI postings could be assigned to a profit center with or without a
+CO Object can be a
+CO Object can be a
+CO Object can be an element in
+CO posting leads to an assignment of the cost objects in the corresponding
+Activity Type classifies the activities performed within a company by one or several
+Activity Type serve as serve as tracing factors for
+Cost Center  when provides services to ≥ one or more activity to e.g. other CCtr/orders/procs
+Cost Allocation allocated as a debit to the 
+Cost Allocation allocated as a credit to the providing quantity and costs of the sending 
+Cost Allocation is performed by the system using a
+Secondary Cost has a cost allocation element that is stored in the activity type master record as default values element in
+Activity Type can be restricted to the activity type to certain types of cost centers by entering the allowed cost center categories in the
+Cost Allocation  for which you can enter ≤ 8 allowed cost center categories
+Activity Type  is combined with the cost center
+Activity Allocation Price used by system to valuate the quantity entered in the direct
+Activity Allocation Price that you can enter the planned price manually or you have the system calculate it for the
+Statistical Key Figure e.g. “Number of Employees” when can't determine sensible/countable output quantities to allocate to CCtrs that a
+CO has a flexible Controlling (CO) tool that can be used for various purposes called
+Internal Orders various purposes may include e.g. to track costs and revenues within a
+Internal Orders  provide capabilities for planning
+Internal Orders  monitor overhead costs incurred for a particular purpose
+Internal Orders  monitor costs incurred in the production of a fixed asset
+Internal Orders  offset postings of accrued costs (costs calculated in CO) to cost centers
+Internal Orders  replace the cost accounting parts of Sales and Distribution (SD) sales orders if SD is not being used
+Orders with Revenue category is used to track
+Orders with Revenue category is used to track
+Orders with Revenue  if billing is not automated
+Internal Order Master Data has the most important field in the internal order master called the
+Order Type Field allows you to specify the default values for the different
+Internal Order Master Data  defines certain order characteristics
+Internal Orders  can use internal orders for planning
+SAP S/4HANA  system you can control your internal orders throughout the life cycle (from creation to final settlement
+Internal Order is a real
+Internal Order debits are posted with value type 04 (actual cost) and can be later
+Internal Order  in addition to the real posting
+Statistical Cost  can be used only for analysis purposes
+Internal Order can be marked as posted to as a
+Statistical Internal Order then you can assign cost to the order in addition to the posting on a real
+Statistical Internal Order advantage that you can analyze the cost on the order and on the cost center at once for the
+Statistical Internal Order  advantage that you don’t have to settle the order later
+Statistical Internal Order  and you cannot settle the order later
+Statistical Internal Order  should be used
+Statistical Internal Order and without the requirement to allocate the cost to other cost objects later of a
+Internal Orders  are usually used as an interim collector of costs and aid the planning
+Internal Orders  task when complete
+Internal Orders  task when complete
+Internal Orders  task when complete
+Internal Orders  task when complete
+Internal Order Settlement is another form of periodic cost allocation in a
+Internal Order Settlement  depending on the type of internal order and its business purpose
+Internal Order  depending on the type of internal order and its business purpose
+Internal Order Settlement can (and no impending system restrictions e.g. locks prevent settlement) be made to different types of
+Receiver of an internal order settlement may be a
+Receiver of an internal order settlement may be a
+Receiver of an internal order settlement may be a
+Receiver of an internal order settlement may be a
+Receiver of an internal order settlement may be an account in the
+Receiver of an internal order settlement may be an
+Receiver of an internal order settlement may be (with cost collector) a
+Internal Order Settlement includes a
+Settlement Rule must be defined for each
+Settlement Rule is defined in the record of the order's
+Settlement Rule may specify that all of the costs on the order are settled to a single or may be split to multiple
+Internal Order Settlement can be structured flexibly by using one of the many available settlement options by using a
+Internal Order  for which the system automatically generates offsetting credit entries
+Internal Order  after settlement
+...............................................................................................................................................................................
+X..........................................X...................................................................................................................................
+XX........................................XX...................................................................................................................................
+XXX.......................................XX..........................................................................................X........................................
+XX.X..X..XX...X..XX.XX...X..X.....XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX..X.....................................XX...................................................................................................................................
+XX...X....................................XX...................................................................................................................................
+XX.X..X..XX...X..XX..X...X.X......XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.....X..................................XX...............................X....................X..........X....X..............................................................
+XXXX..X.XXX...X..XX......X........XX..X...XX........XXX...X...X.X.X.X.....X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX......X......X...XXX...X........XX......XX.XX..
+X........X.................................X..................X........................X...................X....X..............................................................
+X..........X...............................X.........................................................X.........................................................................
+X..........XX..............................X.........................................................X.........................................................................
+X..........X.X.............................X.........................................................X.........................................................................
+X..............X...........................X..................................X...................................X.X........X..................................X..X....X..XX..
+X...............X...................X......X..................................X...................................X.X........X..................................X.X.....X..XX..
+...............................................................................................................................................................................
+...................X...........................................................................................................................................................
+XX.X..X..XX...X..XX..XX..XX.......XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX..XXX.XX.......XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX..XX.XXX.......XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X..X.....XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X...X....XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X....X...XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X.....X..XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X......X.XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X.......XXX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+...............................................................................................................................................................................
+.....................................X.........................................................................................................................................
+.......................................X.......................................................................................................................................
+XX.X..X..XX...X..XX..X............XX..X.X.XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX..................XX...X........XX......XX.XX..
+...............................................................................................................................................................................
+.........................................X....................................X...................................X.X........X..................................X....X..X..XX..
+............................................X..................................................................................................................................
+.............................................X.................................................................................................................................
+XX.X..X..XX...X..XX......X..X.....XX..X...XX..X.....XXX.......X...X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X..X.....XX..X...XX...X....XXX.......X...X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X..X.....XX..X...XX..X.X...XXX.......X...X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X..X.....XX..X...XX..X.XX..XXX.......X...X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X..X.....XX..X...XX......X.XXX.......X...X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X..X.....XX..X...XX......XXXXX...X...X.X.XX...X..X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+...............................................................................................................................................................................
+XX........................................XX........X.X........................................................................................................................
+XX.X..X..XX...X..XX......X........XX..X...XX........XXXX......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X........XX..X...XX........XXX.X.....X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X........XX..X...XX........XXX..X....X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X........XX..X...XX........XXX...X...X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X........XX..X...XX........XXX...XX..X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X........XX..X...XX........XXX...X.X.X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+...............................................................................................................................................................................
+.............................................................X.X...............................................................................................................
+X..........................................X...........................................X...................X....X..............................................................
+XX.X..X..XX...X..XX......X........XX..X...XX........XXX.......X.XXX.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+X..........................................X.........................................X.....................X....X..............................................................
+XX.X..X..XX...X..XX......X..X.....XX..X...XX........XXX.......X...X..X....X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XXXX..X.XXX...X..XX......X........XX..X...XX........XXX...X...X.X.X.X.X...X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX......X......X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X........XX..X...XX........XXX.......X.X.X.....X.X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX......X........XX..X...XX........XXX...X...X.X.X......XX..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+...............................................................................................................................................................................
+............................................................................X..................................................................................................
+.............................................................................X.................................................................................................
+..............................................................................X................................................................................................
+.............................................................................X.X...............................................................................................
+.............................................................................X....X............................................................................................
+...............................................................................................................................................................................
+...................................................................................X...........................................................................................
+....................................................................................X........................................................................X.................
+X..........................................X.........................................X.....................X....X..............................................................
+X..........................................X..........................................X....................X....X..............................................................
+X..........................................X............................................X..................X....X..............................................................
+X..........................................X.............................................X.................X....X..............................................................
+X..........................................X..............................................X................X....X..............................................................
+X..........................................X...............................................X...............X....X..............................................................
+X..........................................X.................................................X.............X....X..............................................................
+X..........................................X...................................................X...........X....X..............................................................
+X..........................................X.....................................................X.........X....X..............................................................
+X..........................................X......................................................X........X....X..............................................................
+X..............X...........................X..................................X....................X..............X.X........X..................................X..X....X..XX..
+...............................................................................................................................................................................
+....................................................................................................X..........................................................................
+......................................................................................................X........................................................................
+.......................................................................................................X.......................................................................
+X..........................................X............................................................X..X....X..............................................................
+X..........................................X.............................................................X.X....X..............................................................
+X..........................................X..............................................................XX....X..............................................................
+XX.X..X..XX...X..XX..X............XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX..X............XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XX..XXXX.XX.......XXX.............X...XXX...X........XX......XX.XX..
+..................................................................................................................X............................................................
+XX.X..X..XX...X..XX......X........XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXXXXX.......XXX.............X...XXX...X........XX......XX.XX..
+..............................................................................X...................................X.X........X..................................X.......X..XX..
+..................................................................................................................X...X........................................................
+..................................................................................................................X...XXX......................................................
+..................................................................................................................X......X.....................................................
+..........................................................................................................................X....................................................
+...............................................................................................................................................................................
+...........................................................................................................................XX..................................................
+X..........................................X..................................................................................X................................................
+X..........................................X..................................................................................X.X..............................................
+X..........................................X..................................................................................X..X.............................................
+X..........................................X..................................................................................X...X............................................
+X..........................................X..................................................................................X....X...........................................
+X..........................................X..................................................................................X.....X..........................................
+...............................................................................................................................................................................
+.....................................................................................................................................X.........................................
+.......................................................................................................................................X.......................................
+........................................................................................................................................................................X.X.X..
+........................................................................................................................................X...............................X.X.X..
+........................................................................................................................................XX..............................X.X.X..
+..........................................................................................................................................X.............................X.X.X..
+X..........................................X..................................................................................X............X...................................
+...............................................................................................................................................................................
+............................................................................................................................................X..................................
+XX.X..X..XX...X..XX..X............XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX..............X...XX...X........XX......XX.XX..
+XX.X..X..XX...X..XX..X............XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX...............X..XX...X........XX......XX.XX..
+...............................................................................................................................................................................
+................................................................................................................................................X..............................
+XX.X..X..XX...X..XX..X............XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.................XXX...X........XX......XX.XX..
+XX.X..X..XX...X..XX..X............XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.................X..X...........XX......XX.XX..
+XX.X..X..XX...X..XX..X............XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.................X...X..........XX......XX.XX..
+XX.X..X..XX...X..XX..X............XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX.................X....X.........XX......XX.XX..
+X..........................................X..................................................................................X.........................X......................
+X..........................................X..................................................................................X..........................X.....................
+X..........................................X..................................................................................X...........................X....................
+X..........................................X..................................................................................X............................X...................
+X..........................................X..................................................................................X.............................X..................
+...............................................................................................................................................................................
+..............................................................................................................................................................X................
+XX.X..X..XX...X..XX..X............XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX..................XX...X.......XXX......XX.XX..
+..............................................................................X...................................X.X........X..................................X...X...X..XX..
+..............................................................................X...................................X.X........X..................................X.....X.X..XX..
+..............................................................................X...................................X.X........X..................................X......XX..XX..
+........................................................................................................................................................................X...X..
+XX.X..X..XX...X..XX..X............XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX..................XX...X........XX......XX.XXX.
+XX.X..X..XX...X..XX..X............XX..X...XX........XXX.......X.X.X.......X..XX.XX.....X....X.X............XXXX.XXX.XX.......XXX..................XX...X........XX......XX.XX.X

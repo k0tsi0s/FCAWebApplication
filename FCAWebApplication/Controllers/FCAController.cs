@@ -51,6 +51,7 @@ namespace FCAWebApplication.Controllers
         [HttpPost]
         public ActionResult UploadFile(HttpPostedFileBase file)
         {
+            
             try
             {
                 if (file == null || file.ContentLength <= 0)
@@ -63,6 +64,7 @@ namespace FCAWebApplication.Controllers
                 {
 
                     var fileName = file.FileName.ToLower();
+                    
                     if (!fileName.EndsWith(".csv") && !(fileName.EndsWith(".cgif")) && !(fileName.EndsWith(".cxt")))
                     {
 
@@ -97,22 +99,27 @@ namespace FCAWebApplication.Controllers
                     ViewBag.Result = "File Upload Succeed!";
 
                     wfServerPath = Server.MapPath("~/Uploads/");
-
+                    
+                    string removeQuotes;
                     string strCmdText;
+
                     if (String.Equals(wfExtension, ".csv", StringComparison.OrdinalIgnoreCase) || String.Equals(wfExtension, ".cgif", StringComparison.OrdinalIgnoreCase))
                     {
-
-                        strCmdText = "-windowstyle hidden cd " + wfServerPath + "; ../Content/Executables/CG-FCA-v7.exe " + wfName + wfExtension;
-
-                        var proccess = System.Diagnostics.Process.Start("powershell.exe", strCmdText);
+                        removeQuotes = "-windowstyle hidden cd " + wfServerPath + "; (Get-Content " + wfName + wfExtension + ").Replace([char]34, ' ') | Set-Content " + wfName + wfExtension;
+                        var proccess = System.Diagnostics.Process.Start("powershell.exe", removeQuotes);
                         proccess.WaitForExit();
+                        //-noexit
+                        strCmdText = "-windowstyle hidden cd " + wfServerPath + "; ../Content/Executables/CG-FCA-v7.exe " + wfName + wfExtension;
+                        Console.WriteLine(strCmdText);
 
+                        var proccessCXT = System.Diagnostics.Process.Start("powershell.exe", strCmdText);
+                        proccessCXT.WaitForExit();
                     }
 
 
                     strCmdText = "-windowstyle hidden cd " + wfServerPath + "; ../Content/Executables/In-Close4_oneLinerEdition.exe " + wfName + ".cxt; mv concepts.json " + wfName + ".json";
-                    var proccess2 = System.Diagnostics.Process.Start("powershell.exe", strCmdText);
-                    proccess2.WaitForExit();
+                    var proccessJson = System.Diagnostics.Process.Start("powershell.exe", strCmdText);
+                    proccessJson.WaitForExit();
                     uploadedFile = true;
                     ViewBag.Message = true;
                 }
