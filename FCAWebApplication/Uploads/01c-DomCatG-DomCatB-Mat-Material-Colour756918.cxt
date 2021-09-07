@@ -8,10 +8,10 @@ B
  Mat 
  Domestic Cat :  Bumbles 
  Colour :  Grey 
- Material :  Fleece  has-attribute
- Domestic Cat :  Gwyn  sits-on
  Domestic Cat :  Bumbles  sits-on
-.XX
+ Domestic Cat :  Gwyn  sits-on
+ Material :  Fleece  has-attribute
+XX.
 ...
 ...
 ...

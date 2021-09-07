@@ -103,11 +103,13 @@ namespace FCAWebApplication.Controllers
                     string removeQuotes;
                     string strCmdText;
 
+                    removeQuotes = "-windowstyle hidden cd " + wfServerPath + "; (Get-Content " + wfName + wfExtension + ").Replace([char]34, ' ') | Set-Content " + wfName + wfExtension;
+                    var proccess = System.Diagnostics.Process.Start("powershell.exe", removeQuotes);
+                    proccess.WaitForExit();
+
                     if (String.Equals(wfExtension, ".csv", StringComparison.OrdinalIgnoreCase) || String.Equals(wfExtension, ".cgif", StringComparison.OrdinalIgnoreCase))
                     {
-                        removeQuotes = "-windowstyle hidden cd " + wfServerPath + "; (Get-Content " + wfName + wfExtension + ").Replace([char]34, ' ') | Set-Content " + wfName + wfExtension;
-                        var proccess = System.Diagnostics.Process.Start("powershell.exe", removeQuotes);
-                        proccess.WaitForExit();
+                        
                         //-noexit
                         strCmdText = "-windowstyle hidden cd " + wfServerPath + "; ../Content/Executables/CG-FCA-v7.exe " + wfName + wfExtension;
                         Console.WriteLine(strCmdText);
