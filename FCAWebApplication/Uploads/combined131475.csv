@@ -1,0 +1,36 @@
+Organization,highest level is,Client
+Client,consists of ≥ o,Controlling Area
+Controlling Area,consists of ≥ o,Company code
+Company code,consists of ≥ o,Organizational Unit
+Organizational Unit,consists of ≥ o,Position
+Company code,consists of ≥ o,Sales Organization
+Sales Organization,consists of ≥ o,Division
+Organizational Unit,consists of ≥ o,Purchasing Organization 
+Company code,consists of ≥ o,Plant
+Plant,consists of ≥ o,Storage Location
+CO,highest level,Operating Concern
+Operating Concern,central organizational unit in,Profitability Analysis (CO-PA)
+Operating Concern,one or more,CO Areas
+FI,independent accounting unit is,Company code
+Purchasing Organization ,subdivides the  enterprise by each,Purchasing Requirement
+Purchasing Organization ,procures,Material/Service
+Purchasing Organization ,negotiates purchase conditions with each,Vendor
+Purchasing Organization ,assumes responsibility for,Purchasing
+Purchasing,can internally/externally be via the key of,Purchasing Group
+Business Partner Master Data,records,Business Partner
+Business Partner,assigned role,Supplier
+Business Partner,assigned role,FI Vendor
+FI Vendor,consists of their,Payment Terms
+FI Vendor,consists of their,Important Contacts
+FI Vendor,consists of our,G/L Reconciliation A/C (Creditor)
+Business Partner,assigned role,Customer
+Material Master Data,records sold, manufactured, purchased, 
+inventoried, and costed data of,Product
+Material Master Data,has views by,Business Function
+Material Master Data,copied and joined into e.g. a ,Sales Order Document
+Business Partner Master Data,copied and joined into e.g. a ,Sales Order Document
+Sales Order Document,consists of,Company code
+Sales Order Document,consists of,Sales Organization
+Sales Order Document,consists of,Distribution Channel
+Sales Order Document,consists of,Division
+Sales Order Document,consists of,Plant

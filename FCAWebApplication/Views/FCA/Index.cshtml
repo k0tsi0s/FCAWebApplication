@@ -37,7 +37,7 @@
                     <p>Select a .CSV, .CGIF or a .CXT File:.</p>
                     @Html.TextBox("file", "", new { type = "file" }) <br />
                     <input type="submit" value="Upload" accept=".csv,.cgif,.cxt" id="uploadFile" />
-                    @ViewBag.Message
+                    @*@ViewBag.Message*@
                 </div>
             }
             @ViewBag.Result
@@ -79,8 +79,22 @@
     </div>
     <script>
         $(document).ready(function () {
-            var showFile = Get('https://localhost:44325/fca/ShowFile');
 
+            var fullUrl = window.location.href;
+            var pos = fullUrl.toLowerCase().lastIndexOf('/fca');
+
+            //var newUrl = (fullUrl.toLowerCase().includes('fca') == 'true') ? fullUrl.substring(0, pos) + '/ShowFile' : fullUrl.substring(0, pos) + 'fca/ShowFile';
+            var newUrl = fullUrl.substring(0, pos + 4) + '/ShowFile';
+
+
+            //var newUrl = null;
+            //if (fullUrl.toLowerCase().includes('fca')) {
+            //    newUrl = fullUrl.substring(0, pos + 4) + '/ShowFile';
+            //} else {
+            //    newUrl = fullUrl.substring(0, pos + 4) + 'FCA/ShowFile';
+            //}
+
+            var showFile = Get(newUrl);
             if (showFile == 'False') {
                 $('#FCATreeTool').hide();
                 $('#exportFile').hide();

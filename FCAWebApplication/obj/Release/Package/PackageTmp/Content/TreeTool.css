@@ -4,8 +4,8 @@
 }
 
 .modal-content .modal-dialog {
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     left: 0;
     top: 0;
     right: 0;
@@ -15,7 +15,7 @@
 }
 
 .modal-content .modal-body {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 150px);
     overflow: auto;
 }
 

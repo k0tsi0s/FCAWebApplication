@@ -1,4 +1,5 @@
 ﻿using FCAWebApplication.Models;
+//using FCAWebApplication.Services;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -37,6 +38,7 @@ namespace FCAWebApplication.Controllers
         [HttpGet]
         public Boolean ShowFile()
         {
+            //Console.WriteLine(uploadedFile);
             return uploadedFile;
 
         }
@@ -45,9 +47,15 @@ namespace FCAWebApplication.Controllers
         public ActionResult UploadFile()
         {
             //return View();
-            return View("Index");
+            return View();
         }
-        
+
+        //[HttpGet]
+        //public String Logger()
+        //{
+        //    return //MyLogger.GetLogs();
+        //}
+
         [HttpPost]
         public ActionResult UploadFile(HttpPostedFileBase file)
         {
@@ -56,6 +64,7 @@ namespace FCAWebApplication.Controllers
             {
                 if (file == null || file.ContentLength <= 0)
                 {
+                    //MyLogger.Record( "File is null or empty");
                     ViewBag.Result = "File upload failed!!";
                     uploadedFile = false;
                     return View("Index");
@@ -63,8 +72,9 @@ namespace FCAWebApplication.Controllers
                 else
                 {
 
+                    //MyLogger.Record(  "File NOT null or empty...");
                     var fileName = file.FileName.ToLower();
-                    
+                    //MyLogger.Record(  "Filename  = ..." + fileName);
                     if (!fileName.EndsWith(".csv") && !(fileName.EndsWith(".cgif")) && !(fileName.EndsWith(".cxt")))
                     {
 
@@ -72,8 +82,14 @@ namespace FCAWebApplication.Controllers
                         uploadedFile = false;
                         return View("Index");
                     }
+
+
+                    //MyLogger.Record(  "attempt to fetching directory : " );
                     DirectoryInfo di = new DirectoryInfo(Path.Combine(Server.MapPath("~/Uploads")));
 
+                    //MyLogger.Record(  "fetching directory : " + di.Name);
+
+                    //MyLogger.Record(  "deleting files");
                     foreach (FileInfo files in di.GetFiles())
                     {
                         files.Delete();
@@ -82,7 +98,7 @@ namespace FCAWebApplication.Controllers
                     {
                         dir.Delete(true);
                     }
-
+                    //MyLogger.Record(  "files deleted");
                     string _FileName = Path.GetFileName(file.FileName);
                     Random rnd = new Random();
                     ////_FileName = _FileName + rnd.Next(1000, 9999).ToString();
@@ -93,9 +109,9 @@ namespace FCAWebApplication.Controllers
                     string wfExtension = Path.GetExtension(file.FileName);
 
                     string _path = Path.Combine(Server.MapPath("~/Uploads"), wfName + wfExtension);
-
+                    //MyLogger.Record("path : " + _path);
                     file.SaveAs(_path);
-
+                    //MyLogger.Record("saved");
                     ViewBag.Result = "File Upload Succeed!";
 
                     wfServerPath = Server.MapPath("~/Uploads/");
@@ -127,9 +143,12 @@ namespace FCAWebApplication.Controllers
                 }
                 return View("Index");
             }
-            catch
+            catch(Exception e)
             {
-                ViewBag.Result = "File upload failed!!";
+
+                //MyLogger.Record(  "exception + "  + e.Message);
+                //MyLogger.Record(  "exception + " + e.StackTrace.ToString());
+                ViewBag.Result = "File upload failed!!" + e.Message;
                 uploadedFile = false;
                 return View("Index");
 

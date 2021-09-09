@@ -1,0 +1,36 @@
+B
+
+9
+13
+
+Pedigree: British_Blue
+Mat: Gwyn's
+Cat: Gwyn
+Cat: Bessie
+Cat: Bumbles
+Person: Simon
+Hotel: OpenSky
+City: London
+Coach: #564
+Coach: #564 destination
+Hotel: OpenSky location
+Person: Simon travels-by
+Person: Simon books
+Cat: Gwyn heritage
+Cat: Gwyn sits-on
+Cat: Bumbles heritage
+Cat: Bessie offspring-of
+Cat: Bumbles owner
+Cat: Gwyn owner
+Cat: Bessie heritage
+Cat: Bessie offspring-of
+Cat: Bumbles sits-on
+....X.XX..XX.
+.....X.X...XX
+.......X.....
+.............
+...........X.
+.......XXX.X.
+...X...XXX.X.
+XXXX...XXX.X.
+..X....XXX.X.

@@ -1,0 +1,113 @@
+B
+
+36
+36
+
+Organization
+Client
+Controlling Area
+Company code
+Organizational Unit
+Position
+Sales Organization
+Division
+Purchasing Organization 
+Plant
+Storage Location
+CO
+Operating Concern
+Profitability Analysis (CO-PA)
+CO Areas
+FI
+Purchasing Requirement
+Material/Service
+Vendor
+Purchasing
+Purchasing Group
+Business Partner Master Data
+Business Partner
+Supplier
+FI Vendor
+Payment Terms
+Important Contacts
+G/L Reconciliation A/C (Creditor)
+Customer
+Material Master Data
+ manufactured, purchased, 
+inventoried
+Product
+Business Function
+Sales Order Document
+Distribution Channel
+Organization highest level is
+Client consists of ≥ o
+Controlling Area consists of ≥ o
+Company code consists of ≥ o
+Organizational Unit consists of ≥ o
+Company code consists of ≥ o
+Sales Organization consists of ≥ o
+Organizational Unit consists of ≥ o
+Company code consists of ≥ o
+Plant consists of ≥ o
+CO highest level
+Operating Concern central organizational unit in
+Operating Concern one or more
+FI independent accounting unit is
+Purchasing Organization  subdivides the  enterprise by each
+Purchasing Organization  procures
+Purchasing Organization  negotiates purchase conditions with each
+Purchasing Organization  assumes responsibility for
+Purchasing can internally/externally be via the key of
+Business Partner Master Data records
+Business Partner assigned role
+Business Partner assigned role
+FI Vendor consists of their
+FI Vendor consists of their
+FI Vendor consists of our
+Business Partner assigned role
+Material Master Data records sold
+inventoried  and costed data of
+Material Master Data has views by
+Material Master Data copied and joined into e.g. a 
+Business Partner Master Data copied and joined into e.g. a 
+Sales Order Document consists of
+Sales Order Document consists of
+Sales Order Document consists of
+Sales Order Document consists of
+Sales Order Document consists of
+....................................
+X...................................
+XX..................................
+XXX..........X...............XXX....
+XXXX.........X...............XXX....
+XXXXX........X...............XXX....
+XXX..X.......X...............XXXX...
+XXX..XX......X...............XXXX.X.
+XXXX...X.....X...............XXX....
+XXX.....X....X...............XXX...X
+XXX.....XX...X...............XXX...X
+....................................
+..........X.........................
+..........XX........................
+..........X.X.......................
+....................................
+XXXX...X.....XX..............XXX....
+XXXX...X.....X.X.............XXX....
+XXXX...X.....X..X............XXX....
+XXXX...X.....X...X...........XXX....
+XXXX...X.....X...XX..........XXX....
+....................................
+...................X................
+...................XX...............
+...................X.X..............
+...................X.XX.............
+...................X.X.X............
+...................X.X..X...........
+...................X.....X..........
+....................................
+..........................X.........
+....................................
+...........................X........
+............................X.......
+.............................XX.....
+.............................XX..X..

@@ -97,13 +97,45 @@
     var fileInput = $('#files');
     var uploadButton = $('#upload');
 
+    //function GetAsync(theUrl, callback) {
+    //    var xmlHttp = new XMLHttpRequest();
+    //    xmlHttp.onreadystatechange = function () {
+    //        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+    //            callback(xmlHttp.responseText);
+    //    }
+    //    xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+    //    xmlHttp.send(null);
+    //    return xmlHttp.responseText;
+    //}
+
+    //async function fetchJSONAsync(url) {
+    //    var response = await fetch(url);
+    //    //var data = await response.json();
+    //    console.log(response.json());
+    //    return response.formData;
+    //}
+
     function Get(yourUrl) {
         var Httpreq = new XMLHttpRequest();
         // a new request
-        Httpreq.open("GET", yourUrl, false);
+        Httpreq.open('GET', yourUrl, false);
         Httpreq.send(null);
         return Httpreq.responseText;
     }
+
+
+    //function loadDoc(url) {
+    //    var xhttp = new XMLHttpRequest();
+    //    xhttp.onreadystatechange = function () {
+    //        if (this.readyState == 4 && this.status == 200) {
+    //            return this.responseText;
+    //            //document.getElementById("demo").innerHTML = this.responseText;
+    //        }
+    //    };
+    //    xhttp.open("GET", url, true);
+    //    xhttp.send();
+    //    //return this.responseText;
+    //}
 
     function reload(upload) {
 
@@ -117,7 +149,7 @@
 
         // Create a reader object
         var reader = new FileReader();
-        var jsonFile = Get('https://localhost:44325/fca/GetFile');
+        var jsonFile = Get('GetFile'); 
         
         if (jsonFile != null) {
             var myblob = new Blob([jsonFile], {
