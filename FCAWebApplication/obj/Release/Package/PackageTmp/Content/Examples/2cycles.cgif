@@ -1,0 +1,2 @@
+[C: *x1] [E: *x2] [D: *x3] [Z: *x4] [B: *x5] [A: *x6] 
+(to-cycle1 ?x6 ?x1 ?x5)(in-cycle1 ?x5 ?x1)(to-cycle2 ?x2 ?x6 ?x3)(in-cycle2 ?x3 ?x2)(from-cycle2 ?x2 ?x4)(from-cycle1 ?x5 ?x4)

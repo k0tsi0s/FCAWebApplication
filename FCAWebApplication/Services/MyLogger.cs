@@ -22,7 +22,7 @@ namespace FCAWebApplication.Services
             String jsonContent = null;
             foreach (String logR in LogRecords)
             {
-                jsonContent += logR + "\n";
+                jsonContent += logR + " ************\n";
             }
 
 

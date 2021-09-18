@@ -1,5 +1,5 @@
 ﻿using FCAWebApplication.Models;
-//using FCAWebApplication.Services;
+using FCAWebApplication.Services;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -15,8 +15,13 @@ namespace FCAWebApplication.Controllers
         static string WorkingFileName;
         static string wfServerPath;
         static Boolean uploadedFile = false;
+
         // GET: FCA
         public ActionResult Index()
+        {
+            return View();
+        }
+        public ActionResult Tool()
         {
             return View();
         }
@@ -44,17 +49,17 @@ namespace FCAWebApplication.Controllers
         }
 
         [HttpGet]
+        public String Logger()
+        {
+            return MyLogger.GetLogs();
+        }
+
+        [HttpGet]
         public ActionResult UploadFile()
         {
             //return View();
-            return View();
+            return Redirect("Tool");
         }
-
-        //[HttpGet]
-        //public String Logger()
-        //{
-        //    return //MyLogger.GetLogs();
-        //}
 
         [HttpPost]
         public ActionResult UploadFile(HttpPostedFileBase file)
@@ -64,32 +69,32 @@ namespace FCAWebApplication.Controllers
             {
                 if (file == null || file.ContentLength <= 0)
                 {
-                    //MyLogger.Record( "File is null or empty");
+                    MyLogger.Record( "File is null or empty");
                     ViewBag.Result = "File upload failed!!";
                     uploadedFile = false;
-                    return View("Index");
+                    return Redirect("Tool");
                 }
                 else
                 {
 
-                    //MyLogger.Record(  "File NOT null or empty...");
+                    MyLogger.Record(  "File NOT null or empty...");
                     var fileName = file.FileName.ToLower();
-                    //MyLogger.Record(  "Filename  = ..." + fileName);
+                    MyLogger.Record(  "Filename  = ..." + fileName);
                     if (!fileName.EndsWith(".csv") && !(fileName.EndsWith(".cgif")) && !(fileName.EndsWith(".cxt")))
                     {
 
                         ViewBag.Result = "Invalid file type.";
                         uploadedFile = false;
-                        return View("Index");
+                        return Redirect("Tool");
                     }
 
 
-                    //MyLogger.Record(  "attempt to fetching directory : " );
+                    MyLogger.Record(  "attempt to fetching directory : " );
                     DirectoryInfo di = new DirectoryInfo(Path.Combine(Server.MapPath("~/Uploads")));
 
-                    //MyLogger.Record(  "fetching directory : " + di.Name);
+                    MyLogger.Record(  "fetching directory : " + di.Name);
 
-                    //MyLogger.Record(  "deleting files");
+                    MyLogger.Record(  "deleting files");
                     foreach (FileInfo files in di.GetFiles())
                     {
                         files.Delete();
@@ -98,7 +103,7 @@ namespace FCAWebApplication.Controllers
                     {
                         dir.Delete(true);
                     }
-                    //MyLogger.Record(  "files deleted");
+                    MyLogger.Record(  "files deleted");
                     string _FileName = Path.GetFileName(file.FileName);
                     Random rnd = new Random();
                     ////_FileName = _FileName + rnd.Next(1000, 9999).ToString();
@@ -109,69 +114,126 @@ namespace FCAWebApplication.Controllers
                     string wfExtension = Path.GetExtension(file.FileName);
 
                     string _path = Path.Combine(Server.MapPath("~/Uploads"), wfName + wfExtension);
-                    //MyLogger.Record("path : " + _path);
+                    MyLogger.Record("path : " + _path);
                     file.SaveAs(_path);
-                    //MyLogger.Record("saved");
+                    MyLogger.Record("saved");
                     ViewBag.Result = "File Upload Succeed!";
 
                     wfServerPath = Server.MapPath("~/Uploads/");
                     
-                    string removeQuotes;
+                    //string removeQuotes;
                     string strCmdText;
 
-                    removeQuotes = "-windowstyle hidden cd " + wfServerPath + "; (Get-Content " + wfName + wfExtension + ").Replace([char]34, ' ') | Set-Content " + wfName + wfExtension;
-                    var proccess = System.Diagnostics.Process.Start("powershell.exe", removeQuotes);
-                    proccess.WaitForExit();
+
+                    //****************************************************************
+                    
+                    //Change server path
+                    string changePath = "cd " + wfServerPath + ";";
+                    //Close remain powerShells
+                    string closePSs = "Stop-Process -Name 'powershell.exe';";
+                    //Remove quotes and replace the file
+                    string removeQuotes = "(Get-Content " + wfName + wfExtension + ").Replace([char]34, ' ') | Set-Content " + wfName + wfExtension + ";";
+                    //Execute CGFCA.exe with given file
+                    string executeCGFCA = "../Content/Executables/CG-FCA-v7.exe " + wfName + wfExtension + ";";
+                    //Execute In-Close4.exe with given file
+                    string executeInClose = "../Content/Executables/In-Close4_oneLinerEdition.exe " + wfName + ".cxt" + ";";
+                    //Rename file concepts.json to fileName.json
+                    string renameJsonFile = "mv concepts.json " + wfName + ".json" + ";";
+
+                    //close remain powershells
+                    System.Diagnostics.Process.Start("powershell.exe", changePath + closePSs);
+
+                    //change directory and remove quotes
+                    var processCPRQ = System.Diagnostics.Process.Start("powershell.exe", changePath + removeQuotes);
+                    MyLogger.Record("Command for change directory and remover quote: " + changePath + removeQuotes);
+                    processCPRQ.WaitForExit();
 
                     if (String.Equals(wfExtension, ".csv", StringComparison.OrdinalIgnoreCase) || String.Equals(wfExtension, ".cgif", StringComparison.OrdinalIgnoreCase))
                     {
-                        
-                        //-noexit
-                        strCmdText = "-windowstyle hidden cd " + wfServerPath + "; ../Content/Executables/CG-FCA-v7.exe " + wfName + wfExtension;
-                        Console.WriteLine(strCmdText);
+                        //execute CCFCA with given file
+                        var processCGFCA = System.Diagnostics.Process.Start("powershell.exe", changePath + executeCGFCA);
+                        MyLogger.Record("Command for execute CGFCA: " + changePath + executeCGFCA);
+                        processCGFCA.WaitForExit();
 
-                        var proccessCXT = System.Diagnostics.Process.Start("powershell.exe", strCmdText);
-                        proccessCXT.WaitForExit();
+                        //execute In-Close with given file
+                        var processInClose = System.Diagnostics.Process.Start("powershell.exe", changePath + executeInClose);
+                        MyLogger.Record("Command for execute InClose: " + changePath + executeInClose);
+                        processInClose.WaitForExit();
+
+                        //rename generated json file to fileName.json
+                        var processRename = System.Diagnostics.Process.Start("powershell.exe", changePath + renameJsonFile);
+                        MyLogger.Record("Command for renaming json file: " + changePath + renameJsonFile);
+                        processRename.WaitForExit();
+
+                    }
+                    else
+                    {
+                        //execute In-Close with given file
+                        var processInClose = System.Diagnostics.Process.Start("powershell.exe", changePath + executeInClose);
+                        MyLogger.Record("Command for execute InClose: " + changePath + executeInClose);
+                        processInClose.WaitForExit();
+
+                        //rename generated json file to fileName.json
+                        var processRename = System.Diagnostics.Process.Start("powershell.exe", changePath + renameJsonFile);
+                        MyLogger.Record("Command for renaming json file: " + changePath + renameJsonFile);
+                        processRename.WaitForExit();
+
                     }
 
+                    //****************************************************************
+                    //removeQuotes = "cd " + wfServerPath + "; (Get-Content " + wfName + wfExtension + ").Replace([char]34, ' ') | Set-Content " + wfName + wfExtension;
+                    //var proccess = System.Diagnostics.Process.Start("powershell.exe", removeQuotes);
+                    //proccess.WaitForExit();
 
-                    strCmdText = "-windowstyle hidden cd " + wfServerPath + "; ../Content/Executables/In-Close4_oneLinerEdition.exe " + wfName + ".cxt; mv concepts.json " + wfName + ".json";
-                    var proccessJson = System.Diagnostics.Process.Start("powershell.exe", strCmdText);
-                    proccessJson.WaitForExit();
+                    //if (String.Equals(wfExtension, ".csv", StringComparison.OrdinalIgnoreCase) || String.Equals(wfExtension, ".cgif", StringComparison.OrdinalIgnoreCase))
+                    //{
+                        
+                    //    //-noexit
+                    //    strCmdText = "cd " + wfServerPath + "; ../Content/Executables/CG-FCA-v7.exe " + wfName + wfExtension;
+                    //    Console.WriteLine(strCmdText);
+                    //    MyLogger.Record("Command for powershell .cxt: " + strCmdText);
+                    //    var proccessCXT = System.Diagnostics.Process.Start("powershell.exe", strCmdText);
+                    //    proccessCXT.WaitForExit();
+                        
+                    //}
+
+
+                    //strCmdText = "cd " + wfServerPath + "; ../Content/Executables/In-Close4_oneLinerEdition.exe " + wfName + ".cxt; mv concepts.json " + wfName + ".json";
+                    //var proccessJson = System.Diagnostics.Process.Start("powershell.exe", strCmdText);
+                    //MyLogger.Record( "Command for powershell .json: " + strCmdText);
+                   
                     uploadedFile = true;
                     ViewBag.Message = true;
                 }
-                return View("Index");
+                return Redirect("Tool");
             }
             catch(Exception e)
             {
 
-                //MyLogger.Record(  "exception + "  + e.Message);
-                //MyLogger.Record(  "exception + " + e.StackTrace.ToString());
+                MyLogger.Record(  "exception + "  + e.Message);
+                MyLogger.Record(  "exception + " + e.StackTrace.ToString());
                 ViewBag.Result = "File upload failed!!" + e.Message;
                 uploadedFile = false;
-                return View("Index");
+                return Redirect("Tool");
 
             }
         }
 
-        public ActionResult ExportFile(string file)
-        {
-
-
-            try
-            {
-                byte[] fileBytes = System.IO.File.ReadAllBytes(wfServerPath + WorkingFileName + file);
-                string fileName = WorkingFileName + file;
-                ViewBag.Result = "File export succeed!";
-                return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, fileName);
-            }
-            catch
-            {
-                ViewBag.Message = "File export failed!";
-                return View("Index");
-            }
-        }
+        //public ActionResult ExportFile(string file)
+        //{
+        //    try
+        //    {
+        //        byte[] fileBytes = System.IO.File.ReadAllBytes(wfServerPath + WorkingFileName + file);
+        //        string fileName = WorkingFileName + file;
+        //        ViewBag.Result = "File export succeed!";
+        //        return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, fileName);
+        //    }
+        //    catch
+        //    {
+        //        ViewBag.Message = "File export failed!";
+        //        return Redirect("Tool");
+        //    }
+        //}
 
         public ActionResult GeneratedFiles()
         {
@@ -192,6 +254,29 @@ namespace FCAWebApplication.Controllers
         {
             //Build the File Path.
             string path = Server.MapPath("~/Uploads/") + fileName;
+
+            //Read the File data into Byte Array.
+            byte[] bytes = System.IO.File.ReadAllBytes(path);
+
+            //Send the File to Download.
+            return File(bytes, "application/octet-stream", fileName);
+        }
+        public FileResult DownloadExampleFile(string fileName)
+        {
+            //Build the File Path.
+            string path = Server.MapPath("~/Content/Examples/") + fileName;
+
+            //Read the File data into Byte Array.
+            byte[] bytes = System.IO.File.ReadAllBytes(path);
+
+            //Send the File to Download.
+            return File(bytes, "application/octet-stream", fileName);
+        }
+
+        public FileResult DownloadReadMeFile(string fileName)
+        {
+            //Build the File Path.
+            string path = Server.MapPath("~/Content/ReadMe/") + fileName;
 
             //Read the File data into Byte Array.
             byte[] bytes = System.IO.File.ReadAllBytes(path);

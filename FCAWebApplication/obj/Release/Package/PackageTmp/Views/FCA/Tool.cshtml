@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "Tool";
+}
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <link href="~/Content/TreeTool.css" rel="stylesheet" />
+
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+        <link rel="shortcut icon" href="favicon.ico">
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script src="~/Scripts/treelist.js"></script>
+        <script src="~/Scripts/drawFileTree.js"></script>
+        <script src="~/Scripts/drawDendrogram.js"></script>
+        <script src="~/Scripts/drawVerticalDendrogram.js"></script>
+
+        <title>FCA Tree Tool - Web Application</title>
+    </head>
+
+    <body>
+        <br />
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            About
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        @Html.Partial("~/Views/FCA/_about.cshtml")
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            FCA Tool
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        @Html.Partial("~/Views/FCA/_tool.cshtml")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,113 +1,25 @@
 B
 
-36
-36
+6
+8
 
-Organization
-Client
-Controlling Area
-Company code
-Organizational Unit
-Position
-Sales Organization
-Division
-Purchasing Organization 
-Plant
-Storage Location
-CO
-Operating Concern
-Profitability Analysis (CO-PA)
-CO Areas
-FI
-Purchasing Requirement
-Material/Service
-Vendor
-Purchasing
-Purchasing Group
-Business Partner Master Data
-Business Partner
-Supplier
-FI Vendor
-Payment Terms
-Important Contacts
-G/L Reconciliation A/C (Creditor)
-Customer
-Material Master Data
- manufactured, purchased, 
-inventoried
-Product
-Business Function
-Sales Order Document
-Distribution Channel
-Sales Order Document consists of
-Sales Order Document consists of
-Material Master Data has views by
-inventoried  and costed data of
-Material Master Data records sold
-Business Partner assigned role
-FI Vendor consists of our
-FI Vendor consists of their
-FI Vendor consists of their
-Business Partner assigned role
-Purchasing can internally/externally be via the key of
-Purchasing Organization  negotiates purchase conditions with each
-Purchasing Organization  procures
-Purchasing Organization  subdivides the  enterprise by each
-Operating Concern one or more
-Operating Concern central organizational unit in
-Plant consists of ≥ o
-Sales Organization consists of ≥ o
-Organizational Unit consists of ≥ o
-Sales Order Document consists of
-Sales Order Document consists of
-Purchasing Organization  assumes responsibility for
-Company code consists of ≥ o
-Company code consists of ≥ o
-CO highest level
-Business Partner assigned role
-Organizational Unit consists of ≥ o
-Business Partner Master Data records
-Company code consists of ≥ o
-Sales Order Document consists of
-FI independent accounting unit is
-Controlling Area consists of ≥ o
-Client consists of ≥ o
-Business Partner Master Data copied and joined into e.g. a 
-Material Master Data copied and joined into e.g. a 
-Organization highest level is
-....................................
-...................................X
-................................X..X
-.............................XXXXXXX
-............................XXXXXXXX
-..................X.........XXXXXXXX
-....................X..X.....XXXXXXX
-X................X..X..X.....XXXXXXX
-..........................X.XXXXXXXX
-...................X..X......XXXXXXX
-................X..X..X......XXXXXXX
-....................................
-........................X...........
-...............X........X...........
-..............X.........X...........
-....................................
-.............X............X.XXXXXXXX
-............X.............X.XXXXXXXX
-...........X..............X.XXXXXXXX
-.....................X....X.XXXXXXXX
-..........X..........X....X.XXXXXXXX
-....................................
-...........................X........
-.........X.................X........
-.........................X.X........
-........X................X.X........
-.......X.................X.X........
-......X..................X.X........
-.....X.....................X........
-....................................
-....X...............................
-....................................
-...X................................
-..X.................................
-.................................XX.
-.X...............................XX.
+C
+E
+D
+Z
+B
+A
+B from-cycle1
+E from-cycle2
+E to-cycle2
+B in-cycle1
+D in-cycle2
+A to-cycle2
+C to-cycle1
+A to-cycle1
+...X..XX
+..X.XX..
+..X.XX..
+XX..XXXX
+...X..XX
+........
