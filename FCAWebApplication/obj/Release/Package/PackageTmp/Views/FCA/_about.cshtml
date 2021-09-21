@@ -1,28 +1,41 @@
-﻿<div class="jumbotron">
-    <h1>FCA Web Application</h1>
-    <p class="lead">
-        FCA Web Application combines the functionality of three individual tools, CGFCA, In-Close and FCA Tree Tool. The basic functionality of the site provides an online and completed solution for processing and visualization of knowledge representation. Website includes simple and well documented functionalities. Below you can find three different type files that the website accepts as uploads. Also, hyperlinks below contain the readme files for CGFCA and In-Close tools.
-    </p>
-    <div class="row">
-        <div class="col-md-2">@Html.ActionLink("CGFCA_README.txt", "DownloadReadMeFile", new { fileName = "CGFCA_README.txt" })</div>
-        <div class="col-md-2">@Html.ActionLink("InClose_README.txt", "DownloadReadMeFile", new { fileName = "InClose_README.txt" })</div>
-    </div>
-</div>
+﻿<html>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>3 Columns CSV</h2>
-        <p>A three columns csv file contains a triple relation in each row. Hyperlink below downloads an example file which you can use as upload to the current website tool.</p>
-        @Html.ActionLink("business.csv", "DownloadExampleFile", new { fileName = "business.csv" })
-    </div>
-    <div class="col-md-4">
-        <h2>CGIF</h2>
-        <p>Conceptual Graph Interchange Format is a common structure document that describes a coneptual graph. Hyperlink below downloads an example file which you can use as upload to the current website tool.</p>
-        @Html.ActionLink("2cycles.cgif", "DownloadExampleFile", new { fileName = "2cycles.cgif" })
-    </div>
-    <div class="col-md-4">
-        <h2>CXT</h2>
-        <p>Burmeister file is the most common structured FCA file that can be exported from variety of FCA tools. Hyperlink below downloads an example file which you can use as upload to the current website tool.</p>
-        @Html.ActionLink("10-FCnoOwn2.cxt", "DownloadExampleFile", new { fileName = "10-FCnoOwn2.cxt" })
-    </div>
-</div>
+    @*<head>
+        <link href="~/Content/ImagePreview.css" rel="stylesheet" />
+    </head>*@
+
+
+    <body>
+        <div class="jumbotron">
+            <h1>FCA Web Application</h1>
+            <p class="lead">
+                FCA Web Application combines the functionality of three individual tools, CGFCA, In-Close and FCA Tree Tool. The site provides an online and complete solution for processing and visualizing knowledge. The website includes simple and well documented functionalities. Below you can find three different type files that are compatible with the functionality of the web app. Also, hyperlinks below contain the readme files for CGFCA and In-Close tools <a href="#collapse3">(Andrews, 2011; Andrews & Hirsch, 2016; Andrews & Polovina, 2018)</a>.
+            </p>
+            <div class="row">
+                <div class="col-md-2">@Html.ActionLink("CGFCA_README.txt", "DownloadReadMeFile", new { fileName = "CGFCA_README.txt" })</div>
+                <div class="col-md-2">@Html.ActionLink("InClose_README.txt", "DownloadReadMeFile", new { fileName = "InClose_README.txt" })</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h2>3 Columns CSV</h2>
+                <p>A three-column CSV file containing a triple relation in each row for CGFCA. The hyperlink below downloads an example file that you can upload to this tool for CGFCA to translate and view the tree.</p>
+                @Html.ActionLink("business.csv", "DownloadExampleFile", new { fileName = "business.csv" })
+                <img id="csvExample" src="~/Content/Examples/csvExample.png" style="width: 350px; height: 231px;">
+            </div>
+            <div class="col-md-4">
+                <h2>CGIF</h2>
+                <p>The Conceptual Graph Interchange Format (CGIF) describes a conceptual graph intended for the ISO Common Logic standard. The hyperlink below downloads an example file that you can upload for CGFCA to translate and view the tree.</p>
+                @Html.ActionLink("2cycles.cgif", "DownloadExampleFile", new { fileName = "2cycles.cgif" })
+                <img id="cgifDiagram" src="~/Content/Examples/2cycles.png" style="width: 350px; height: 231px;">
+            </div>
+            <div class="col-md-4">
+                <h2>CXT</h2>
+                <p>The Burmeister CXT file format is widely used in FCA. This format can be imported and exported between various FCA tools. The hyperlink below downloads an example that was previously translated from CGIF to CXT by CGFCA. You can upload this file and view the tree.</p>
+                @Html.ActionLink("10-FCnoOwn2.cxt", "DownloadExampleFile", new { fileName = "10-FCnoOwn2.cxt" })
+                <img id="cxtDiagram" src="~/Content/Examples/10-FCnoOwn2.png" style="width: 350px; height: 231px;">
+            </div>
+        </div>
+    </body>
+</html>

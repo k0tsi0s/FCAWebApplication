@@ -135,8 +135,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Examples\10-FCnoOwn2.png" />
     <Content Include="Content\Examples\2cycles.png" />
+    <Content Include="Content\Examples\csvExample.png" />
     <Content Include="Content\Executables\CG-FCA-v7.exe" />
     <Content Include="Content\Executables\In-Close4_oneLinerEdition.exe" />
+    <Content Include="Content\ImagePreview.css" />
     <Content Include="Content\ReadMe\CGFCA_README.txt" />
     <Content Include="Content\ReadMe\InClose_README.txt" />
     <Content Include="Content\TreeTool.css" />
@@ -150,6 +152,7 @@
     <Content Include="Content\Examples\business.csv" />
     <Content Include="Content\Examples\10-FCnoOwn2.cxt" />
     <None Include="Properties\PublishProfiles\FCAwebapp.pubxml" />
+    <None Include="Properties\PublishProfiles\FCAwebapp1.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\d3v4.js" />
