@@ -36,8 +36,7 @@ namespace FCAWebApplication.Controllers
                 var json = webClient.DownloadString(path);
                 return json;
             }
-            return null;
-            
+            return null;            
         }
 
         [HttpGet]
@@ -51,7 +50,7 @@ namespace FCAWebApplication.Controllers
         //[HttpGet]
         //public String Logger()
         //{
-        //    return //MyLogger.GetLogs();
+        //    return MyLogger.GetLogs();
         //}
 
         [HttpGet]
@@ -63,8 +62,7 @@ namespace FCAWebApplication.Controllers
 
         [HttpPost]
         public ActionResult UploadFile(HttpPostedFileBase file)
-        {
-            
+        {            
             try
             {
                 if (file == null || file.ContentLength <= 0)
@@ -76,24 +74,18 @@ namespace FCAWebApplication.Controllers
                 }
                 else
                 {
-
                     //MyLogger.Record(  "File NOT null or empty...");
                     var fileName = file.FileName.ToLower();
                     //MyLogger.Record(  "Filename  = ..." + fileName);
                     if (!fileName.EndsWith(".csv") && !(fileName.EndsWith(".cgif")) && !(fileName.EndsWith(".cxt")))
                     {
-
                         ViewBag.Result = "Invalid file type.";
                         uploadedFile = false;
                         return Redirect("Tool");
                     }
-
-
                     //MyLogger.Record(  "attempt to fetching directory : " );
                     DirectoryInfo di = new DirectoryInfo(Path.Combine(Server.MapPath("~/Uploads")));
-
                     //MyLogger.Record(  "fetching directory : " + di.Name);
-
                     //MyLogger.Record(  "deleting files");
                     foreach (FileInfo files in di.GetFiles())
                     {
@@ -103,30 +95,21 @@ namespace FCAWebApplication.Controllers
                     {
                         dir.Delete(true);
                     }
-                    //MyLogger.Record(  "files deleted");
+                    MyLogger.Record(  "files deleted");
                     string _FileName = Path.GetFileName(file.FileName);
                     Random rnd = new Random();
                     ////_FileName = _FileName + rnd.Next(1000, 9999).ToString();
                     string wfName = Path.GetFileNameWithoutExtension(file.FileName);
                     wfName += rnd.Next(100000, 999999).ToString();
                     WorkingFileName = wfName;
-
                     string wfExtension = Path.GetExtension(file.FileName);
-
                     string _path = Path.Combine(Server.MapPath("~/Uploads"), wfName + wfExtension);
                     //MyLogger.Record("path : " + _path);
                     file.SaveAs(_path);
                     //MyLogger.Record("saved");
                     ViewBag.Result = "File Upload Succeed!";
-
-                    wfServerPath = Server.MapPath("~/Uploads/");
-                    
-                    //string removeQuotes;
-                    //string strCmdText;
-
-
-                    //****************************************************************
-                    
+                    wfServerPath = Server.MapPath("~/Uploads/");     
+                    //****************************************************************                    
                     //Change server path
                     string changePath = "cd " + wfServerPath + ";";
                     //Close remain powerShells
@@ -139,32 +122,26 @@ namespace FCAWebApplication.Controllers
                     string executeInClose = "../Content/Executables/In-Close4_oneLinerEdition.exe " + wfName + ".cxt" + ";";
                     //Rename file concepts.json to fileName.json
                     string renameJsonFile = "mv concepts.json " + wfName + ".json" + ";";
-
                     //close remain powershells
                     System.Diagnostics.Process.Start("powershell.exe", changePath + closePSs);
-
                     //change directory and remove quotes
                     var processCPRQ = System.Diagnostics.Process.Start("powershell.exe", changePath + removeQuotes);
                     //MyLogger.Record("Command for change directory and remover quote: " + changePath + removeQuotes);
                     processCPRQ.WaitForExit();
-
                     if (String.Equals(wfExtension, ".csv", StringComparison.OrdinalIgnoreCase) || String.Equals(wfExtension, ".cgif", StringComparison.OrdinalIgnoreCase))
                     {
                         //execute CCFCA with given file
                         var processCGFCA = System.Diagnostics.Process.Start("powershell.exe", changePath + executeCGFCA);
                         //MyLogger.Record("Command for execute CGFCA: " + changePath + executeCGFCA);
                         processCGFCA.WaitForExit();
-
                         //execute In-Close with given file
                         var processInClose = System.Diagnostics.Process.Start("powershell.exe", changePath + executeInClose);
                         //MyLogger.Record("Command for execute InClose: " + changePath + executeInClose);
                         processInClose.WaitForExit();
-
                         //rename generated json file to fileName.json
                         var processRename = System.Diagnostics.Process.Start("powershell.exe", changePath + renameJsonFile);
                         //MyLogger.Record("Command for renaming json file: " + changePath + renameJsonFile);
                         processRename.WaitForExit();
-
                     }
                     else
                     {
@@ -172,14 +149,11 @@ namespace FCAWebApplication.Controllers
                         var processInClose = System.Diagnostics.Process.Start("powershell.exe", changePath + executeInClose);
                         //MyLogger.Record("Command for execute InClose: " + changePath + executeInClose);
                         processInClose.WaitForExit();
-
                         //rename generated json file to fileName.json
                         var processRename = System.Diagnostics.Process.Start("powershell.exe", changePath + renameJsonFile);
                         //MyLogger.Record("Command for renaming json file: " + changePath + renameJsonFile);
                         processRename.WaitForExit();
-
-                    }
-                   
+                    }                   
                     uploadedFile = true;
                     ViewBag.Message = true;
                 }
@@ -187,7 +161,6 @@ namespace FCAWebApplication.Controllers
             }
             catch(Exception e)
             {
-
                 //MyLogger.Record(  "exception + "  + e.Message);
                 //MyLogger.Record(  "exception + " + e.StackTrace.ToString());
                 ViewBag.Result = "File upload failed!!" + e.Message;

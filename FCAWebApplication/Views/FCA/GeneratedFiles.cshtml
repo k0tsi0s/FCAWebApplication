@@ -12,9 +12,7 @@
 <body>
     <br />
     <br />
-    <p>
-        @*@Html.ActionLink("Back to FCA", "Index", null, new { @class = "btn btn-primary" })
-        @Html.ActionLink("Back to FCA", "Index", "FCA", null, new { @class = "btn btn-primary" })*@
+    <p>       
         <a href="javascript:void(0);" onclick="history.go(-1);" class="btn btn-primary">Back to FCA</a>
     </p>
     <table id="generatedFiles" class="table table-bordered table-hover" style="width:100%">
@@ -33,10 +31,6 @@
                     <td>@file.FileName</td>
 
                     <td><button id="preview">Preview</button></td>
-
-                    @*<td>
-                        <input value="Preview" type="button" onclick="previewFun('@file.FileName')" />
-                    </td>*@
                     <td>@Html.ActionLink("Download", "DownloadFile", new { fileName = file.FileName })</td>
                 </tr>
             }

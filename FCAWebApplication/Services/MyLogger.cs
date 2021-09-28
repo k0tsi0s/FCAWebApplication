@@ -9,8 +9,7 @@ namespace FCAWebApplication.Services
     static class MyLogger
     {
 
-        private static List<String> LogRecords = new List<String>();
-      
+        private static List<String> LogRecords = new List<String>();      
 
         public static void Record(string strMessage)
         {
@@ -22,12 +21,10 @@ namespace FCAWebApplication.Services
             String jsonContent = null;
             foreach (String logR in LogRecords)
             {
-                jsonContent += logR + " ************\n";
+                jsonContent += logR + "<br />";
             }
-
-
-
             return jsonContent;
         }
     }
 }
+

@@ -60,26 +60,16 @@
         $(document).ready(function () {
 
             var fullUrl = window.location.href;
-            var pos = fullUrl.toLowerCase().lastIndexOf('/fca');
-
-            //var newUrl = (fullUrl.toLowerCase().includes('fca') == 'true') ? fullUrl.substring(0, pos) + '/ShowFile' : fullUrl.substring(0, pos) + 'fca/ShowFile';
+            var pos = fullUrl.toLowerCase().lastIndexOf('/fca');         
             var newUrl = fullUrl.substring(0, pos + 4) + '/ShowFile';
-
-
-            //var newUrl = null;
-            //if (fullUrl.toLowerCase().includes('fca')) {
-            //    newUrl = fullUrl.substring(0, pos + 4) + '/ShowFile';
-            //} else {
-            //    newUrl = fullUrl.substring(0, pos + 4) + 'FCA/ShowFile';
-            //}
 
             var showFile = Get(newUrl);
             if (showFile == 'False') {
                 $('#FCATreeTool').hide();
-                $('#exportFile').hide();
+                //$('#exportFile').hide();
             } else {
                 $('#FCATreeTool').show();
-                $('#exportFile').show();
+                //$('#exportFile').show();
             }
         });
 
